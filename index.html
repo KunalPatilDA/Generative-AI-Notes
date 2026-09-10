@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SachiTech Generative AI Academy | Complete GenAI Notes, 100 AI Tools & Projects</title>
-    <meta name="description" content="Learn Generative AI with complete notes, 100 verified AI tools directory, LLM tutorials, prompt engineering, RAG, AI agents, Python projects, quizzes and interview preparation under SachiTech Director Sachin Thete.">
-    <meta name="keywords" content="Generative AI, SachiTech, Sachin Thete, 100 AI Tools, Free AI Tools, LLM, Transformers, RAG, Vector Databases, Prompt Engineering, AI Agents, MCP, Python GenAI Projects">
+    <title>SachiTech Generative AI Academy | Complete GenAI Platform & 100 AI Tools Directory</title>
+    <meta name="description" content="Master Generative AI under Director Sachin Thete with 100 verified free-access AI tools directory, 22 curriculum modules, Python projects, MCQs, and interview questions.">
     <meta name="author" content="Sachin Thete - SachiTech">
     
-    <!-- OpenGraph Metadata -->
-    <meta property="og:title" content="SachiTech Generative AI Academy | Complete GenAI Platform">
-    <meta property="og:description" content="Master Generative AI from Fundamentals to AI Agents with 100 verified AI tools, structured notes, practical Python examples, and real-world projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kunalpatilda.github.io/Generative-AI-Notes/">
-    
-    <!-- Favicon Inline SVG -->
+    <!-- Inline SVG Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b2b4f'/><path d='M30 70 L50 30 L70 70 L55 70 L50 55 L45 70 Z' fill='none' stroke='%2300f2fe' stroke-width='6'/><circle cx='50' cy='30' r='6' fill='%23ffd966'/></svg>">
     
     <style>
-/* SachiTech Generative AI Academy - Main Single Page System CSS */
+/* SachiTech Generative AI Academy — Single-File Responsive CSS */
 :root {
     --bg-primary: #f8fafc;
     --bg-secondary: #ffffff;
@@ -43,7 +36,7 @@
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     
-    --sidebar-width: 310px;
+    --sidebar-width: 300px;
     --header-height: 65px;
     --radius-sm: 6px;
     --radius-md: 10px;
@@ -111,17 +104,11 @@ body {
     color: var(--text-primary);
 }
 
-.brand-logo {
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-}
-
+.brand-logo { width: 36px; height: 36px; border-radius: 8px; }
 .brand-title-group { display: flex; flex-direction: column; }
 .brand-name {
     font-weight: 800;
     font-size: 1.15rem;
-    letter-spacing: -0.02em;
     color: var(--brand-primary);
     display: flex;
     align-items: center;
@@ -133,12 +120,11 @@ body {
     background: var(--brand-accent);
     color: var(--text-white);
     border-radius: 4px;
-    text-transform: uppercase;
     font-weight: 700;
 }
 .director-tag { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
 
-.header-actions { display: flex; align-items: center; gap: 10px; }
+.header-actions { display: flex; align-items: center; gap: 8px; }
 
 .search-trigger-btn {
     display: flex;
@@ -146,13 +132,13 @@ body {
     gap: 8px;
     background: var(--bg-tertiary);
     border: 1px solid var(--border-color);
-    padding: 8px 16px;
+    padding: 7px 14px;
     border-radius: var(--radius-md);
     color: var(--text-muted);
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     cursor: pointer;
     transition: all 0.2s ease;
-    width: 220px;
+    width: 200px;
 }
 .search-trigger-btn:hover { border-color: var(--brand-accent); color: var(--text-primary); }
 
@@ -170,17 +156,17 @@ body {
     background: transparent;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    padding: 8px 14px;
+    padding: 7px 12px;
     border-radius: var(--radius-md);
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 6px;
     transition: all 0.2s ease;
 }
-.header-btn:hover { background: var(--bg-tertiary); border-color: var(--border-hover); }
+.header-btn:hover { background: var(--bg-tertiary); }
 .header-btn.active { background: var(--brand-primary); color: var(--text-white); border-color: var(--brand-primary); }
 
 /* App Layout */
@@ -198,214 +184,213 @@ body {
     top: var(--header-height);
     bottom: 0; left: 0;
     overflow-y: auto;
+    padding: 20px 14px;
     z-index: 900;
-    padding: 20px 12px;
 }
 
 .sidebar-header-title {
     font-size: 0.75rem;
-    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     color: var(--text-muted);
-    padding: 0 12px 10px 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    padding-left: 8px;
 }
 
-.sidebar-nav-list { list-style: none; display: flex; flex-direction: column; gap: 3px; }
+.sidebar-nav-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
 .sidebar-nav-item a {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 14px;
-    border-radius: var(--radius-sm);
-    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: var(--radius-md);
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    text-decoration: none;
+    font-size: 0.88rem;
     font-weight: 500;
     transition: all 0.15s ease;
 }
-.sidebar-nav-item a:hover { background-color: var(--bg-tertiary); color: var(--text-primary); }
+.sidebar-nav-item a:hover { background-color: var(--bg-tertiary); color: var(--brand-primary); }
 .sidebar-nav-item.active a {
     background-color: var(--brand-light);
     color: var(--brand-primary);
-    font-weight: 600;
-    border-left: 4px solid var(--brand-primary);
-    padding-left: 10px;
+    font-weight: 700;
 }
-.nav-num { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); font-weight: 600; min-width: 24px; }
+.sidebar-nav-item .chapter-num {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    background: var(--bg-tertiary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--text-muted);
+}
 
 .app-main {
     margin-left: var(--sidebar-width);
     flex: 1;
-    padding: 32px 48px;
-    max-width: 1200px;
-    min-width: 0;
+    padding: 32px 40px;
+    max-width: 1300px;
 }
 
-.breadcrumbs { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
-.breadcrumbs a { color: var(--text-muted); text-decoration: none; }
-.breadcrumbs a:hover { color: var(--brand-primary); }
-.breadcrumbs .sep { color: var(--border-hover); }
-
-.page-header-box { margin-bottom: 32px; border-bottom: 1px solid var(--border-color); padding-bottom: 24px; }
-.page-title { font-size: 2.2rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em; margin-bottom: 8px; }
-.page-subtitle { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.5; }
-
-.mode-toggle-bar {
-    display: inline-flex;
-    background: var(--bg-tertiary);
-    padding: 4px;
-    border-radius: var(--radius-md);
-    margin-top: 16px;
-    border: 1px solid var(--border-color);
-}
-.mode-btn {
-    padding: 6px 14px;
-    font-size: 0.82rem;
-    font-weight: 600;
-    border: none;
-    background: transparent;
-    color: var(--text-secondary);
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-.mode-btn.active { background: var(--bg-secondary); color: var(--brand-primary); box-shadow: var(--shadow-sm); }
-
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: 48px;
-    margin-bottom: 40px;
-    box-shadow: var(--shadow-md);
-}
-.hero-badge {
+/* Status Badges */
+.badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: var(--brand-light);
-    color: var(--brand-primary);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+}
+.badge-free { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.badge-freetier { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+.badge-freecredits { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.badge-opensource { background: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+.badge-limitedfree { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+/* Tool Directory Grid & Cards */
+.tools-header-banner {
+    background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand-primary) 100%);
+    color: var(--text-white);
+    padding: 28px 32px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-md);
+}
+.tools-header-banner h1 { font-size: 1.8rem; margin-bottom: 8px; font-weight: 800; }
+.tools-header-banner p { opacity: 0.9; font-size: 0.95rem; max-width: 800px; }
+
+.tools-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-secondary);
+    padding: 16px 20px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
+    margin-bottom: 24px;
 }
-.hero-title { font-size: 2.6rem; font-weight: 900; line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 16px; }
-.hero-subtitle { font-size: 1.15rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 32px; }
-.hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
 
-.btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-    padding: 12px 24px; border-radius: var(--radius-md); font-weight: 700; font-size: 0.95rem;
-    cursor: pointer; text-decoration: none; transition: all 0.2s ease; border: 1px solid transparent;
+.cat-pills-container { display: flex; flex-wrap: wrap; gap: 6px; }
+.cat-pill {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
 }
-.btn-primary { background: var(--brand-primary); color: var(--text-white); }
-.btn-primary:hover { background: var(--brand-accent); transform: translateY(-2px); }
-.btn-secondary { background: var(--bg-secondary); color: var(--text-primary); border-color: var(--border-color); }
-.btn-secondary:hover { background: var(--bg-tertiary); border-color: var(--border-hover); transform: translateY(-2px); }
-.btn-accent { background: var(--brand-gold); color: #ffffff; }
-.btn-accent:hover { background: #b45309; transform: translateY(-2px); }
+.cat-pill:hover, .cat-pill.active { background: var(--brand-primary); color: var(--text-white); border-color: var(--brand-primary); }
 
-/* Stats Bar */
-.stats-grid {
+.tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 16px;
-    margin-top: 36px;
-    padding-top: 32px;
-    border-top: 1px solid var(--border-color);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
 }
-.stat-card {
+
+.tool-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
-    padding: 18px;
     border-radius: var(--radius-md);
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.stat-val { font-size: 1.8rem; font-weight: 900; color: var(--brand-primary); font-family: var(--font-mono); }
-.stat-lbl { font-size: 0.82rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; margin-top: 4px; }
+.tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--brand-accent);
+}
 
-/* Callout Boxes */
-.box-callout { padding: 20px 24px; border-radius: var(--radius-md); margin: 24px 0; border-left: 5px solid; background: var(--bg-secondary); box-shadow: var(--shadow-sm); }
-.box-definition { border-left-color: var(--brand-primary); background: var(--bg-accent-light); }
-.box-keypoint { border-left-color: #f59e0b; background: #fef3c7; color: #78350f; }
-.box-example { border-left-color: #10b981; background: #ecfdf5; color: #065f46; }
-.box-warning { border-left-color: #ef4444; background: #fef2f2; color: #991b1b; }
-.box-header { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.tool-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.tool-card-title { font-size: 1.1rem; font-weight: 700; color: var(--brand-primary); }
+.tool-card-cat { font-size: 0.72rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; margin-bottom: 6px; }
+.tool-card-body { font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px; flex: 1; }
 
-/* Code Snippets */
-.code-block { background: #0f172a; color: #f8fafc; border-radius: var(--radius-md); margin: 24px 0; overflow: hidden; font-family: var(--font-mono); }
-.code-header { background: #1e293b; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; font-size: 0.8rem; }
-.code-lang { color: #94a3b8; font-weight: 700; text-transform: uppercase; }
-.copy-btn { background: #334155; border: none; color: #f8fafc; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; cursor: pointer; }
-.code-content { padding: 16px; overflow-x: auto; font-size: 0.9rem; line-height: 1.5; }
-.code-content pre { margin: 0; white-space: pre; }
+.feature-list { list-style: none; margin: 10px 0; font-size: 0.82rem; }
+.feature-list li { padding: 2px 0; display: flex; align-items: center; gap: 6px; }
+.feature-list li::before { content: "✓"; color: #16a34a; font-weight: bold; }
 
-/* Data Tables */
-.table-wrapper { overflow-x: auto; margin: 24px 0; border-radius: var(--radius-md); border: 1px solid var(--border-color); }
-table.data-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; background: var(--bg-secondary); }
-table.data-table th { background: var(--bg-tertiary); color: var(--text-primary); font-weight: 700; padding: 12px 16px; text-align: left; border-bottom: 2px solid var(--border-color); }
-table.data-table td { padding: 12px 16px; border-bottom: 1px solid var(--border-color); color: var(--text-secondary); }
-table.data-table tr:hover { background: var(--bg-tertiary); }
+.limitations-box {
+    background: var(--bg-tertiary);
+    border-left: 3px solid var(--brand-gold);
+    padding: 8px 10px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-bottom: 14px;
+}
 
-/* Card Grids */
-.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin: 24px 0; }
-.card-item { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px; transition: all 0.2s ease; display: flex; flex-direction: column; }
-.card-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--brand-accent); }
-.card-title { font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
-.card-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; flex: 1; margin-bottom: 16px; }
-.tag-badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; background: var(--bg-tertiary); color: var(--text-muted); }
-
-/* Status Filter Buttons */
-.status-filter-btn { background: var(--bg-tertiary); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s ease; }
-.status-filter-btn:hover { background: var(--bg-primary); border-color: var(--brand-accent); }
-.status-filter-btn.active { background: var(--brand-primary); color: var(--text-white); border-color: var(--brand-primary); }
+.tool-card-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+.btn {
+    padding: 7px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.btn-primary { background: var(--brand-primary); color: var(--text-white); }
+.btn-primary:hover { background: var(--brand-dark); }
+.btn-secondary { background: var(--bg-tertiary); color: var(--text-primary); border: 1px solid var(--border-color); }
+.btn-secondary:hover { background: var(--border-hover); }
 
 /* Modals */
-.modal-backdrop { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15, 23, 42, 0.65); backdrop-filter: blur(4px); z-index: 2000; display: none; align-items: flex-start; justify-content: center; padding-top: 60px; }
+.modal-backdrop {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 20px;
+}
 .modal-backdrop.open { display: flex; }
-.search-modal { background: var(--bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--border-color); width: 90%; max-width: 680px; box-shadow: var(--shadow-lg); overflow: hidden; max-height: 80vh; display: flex; flex-direction: column; }
-.search-modal-header { padding: 16px 20px; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; gap: 12px; }
-.search-modal-input { flex: 1; border: none; background: transparent; font-size: 1.1rem; color: var(--text-primary); outline: none; }
-.search-results-list { overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
-.search-result-item { padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-tertiary); text-decoration: none; color: var(--text-primary); cursor: pointer; }
-.search-result-item:hover { background: var(--bg-accent-light); color: var(--brand-primary); }
-.highlight-match { background: #fef08a; color: #854d0e; font-weight: 700; padding: 0 2px; border-radius: 2px; }
-
-.modal-content-box { background: var(--bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--border-color); width: 90%; max-width: 720px; box-shadow: var(--shadow-lg); overflow: hidden; max-height: 85vh; display: flex; flex-direction: column; padding: 24px; position: relative; overflow-y: auto; }
-.modal-close-btn { position: absolute; top: 16px; right: 16px; background: none; border: none; font-size: 1.4rem; color: var(--text-muted); cursor: pointer; }
-
-/* Interactive Diagrams */
-.diagram-wrapper { background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 24px; margin: 32px 0; }
-.diagram-node { cursor: pointer; }
-.diagram-node:hover rect, .diagram-node:hover circle { filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15)); stroke: var(--brand-primary); stroke-width: 2.5px; }
-.node-info-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 5px solid var(--brand-primary); border-radius: var(--radius-md); padding: 16px 20px; margin-top: 16px; display: none; }
-.node-info-card.visible { display: block; }
-
-/* Responsive adjustments */
-.mobile-toggle-btn { display: none; background: transparent; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; padding: 6px; margin-right: 12px; }
-@media (max-width: 768px) {
-    .mobile-toggle-btn { display: block; }
-    .app-sidebar { position: fixed; top: var(--header-height); bottom: 0; left: -100%; width: 290px; transition: left 0.3s ease; box-shadow: var(--shadow-lg); }
-    .app-sidebar.open { left: 0; }
-    .app-main { margin-left: 0; padding: 20px 16px; width: 100%; }
-    .hero-title { font-size: 1.8rem; }
-    .search-trigger-btn { width: 40px; padding: 8px; justify-content: center; }
-    .search-trigger-btn span { display: none; }
-    .director-tag { display: none; }
+.modal-content-box {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 750px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 28px;
+    position: relative;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+.modal-close-btn {
+    position: absolute; top: 16px; right: 20px;
+    background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--text-muted);
 }
 
-.app-footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem; }
+/* Comparison Table */
+.compare-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 0.85rem; }
+.compare-table th, .compare-table td { border: 1px solid var(--border-color); padding: 10px 12px; text-align: left; }
+.compare-table th { background: var(--bg-tertiary); font-weight: 700; color: var(--brand-primary); }
+
+/* Footer */
+.app-footer { margin-top: 60px; padding: 24px 0; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.85rem; }
 .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-.footer-brand { font-weight: 700; color: var(--brand-primary); }
-.footer-links { display: flex; gap: 16px; }
-.footer-links a { color: var(--text-muted); text-decoration: none; }
-.footer-links a:hover { color: var(--brand-primary); }
-.last-updated-badge { display: inline-block; background: var(--bg-tertiary); border: 1px solid var(--border-color); padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); font-weight: 500; }
+
+@media (max-width: 900px) {
+    .app-sidebar { display: none; }
+    .app-main { margin-left: 0; padding: 20px; }
+    .search-trigger-btn { width: 140px; }
+}
     </style>
 </head>
 <body>
@@ -413,7 +398,6 @@ table.data-table tr:hover { background: var(--bg-tertiary); }
     <!-- Header Navbar -->
     <header class="app-header">
         <div style="display: flex; align-items: center;">
-            <button id="mobileMenuToggleBtn" class="mobile-toggle-btn" aria-label="Toggle Navigation Drawer">☰</button>
             <a href="javascript:void(0);" onclick="window.App.navigateTo('home')" class="brand-wrapper">
                 <svg class="brand-logo" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#0b2b4f"/><path d="M30 70 L50 30 L70 70 L55 70 L50 55 L45 70 Z" fill="none" stroke="#00f2fe" stroke-width="6"/><circle cx="50" cy="30" r="6" fill="#ffd966"/></svg>
                 <div class="brand-title-group">
@@ -431,12 +415,9 @@ table.data-table tr:hover { background: var(--bg-tertiary); }
                 🔍 <span>Search platform...</span>
                 <span class="kbd-shortcut">Ctrl K</span>
             </button>
-            <button class="header-btn" onclick="window.App.navigateTo('tools', null)">🛠️ 100 AI Tools</button>
-            <button class="header-btn" onclick="window.App.navigateTo('projects', null)">🐍 Projects</button>
-            <button class="header-btn" onclick="window.App.navigateTo('quiz', null)">🧠 Quiz</button>
-            <button class="header-btn" onclick="window.App.navigateTo('playground', null)">🧪 Playground</button>
-            <button class="header-btn" onclick="window.App.navigateTo('interview', null)">🗣️ Interview</button>
-            <button id="examModeBtn" class="header-btn" onclick="window.App.toggleExamMode()">📖 Exam Prep</button>
+            <button class="header-btn" onclick="window.App.navigateTo('tools')">🛠️ 100 AI Tools</button>
+            <button class="header-btn" onclick="window.App.navigateTo('free-apis')">🔌 Free APIs</button>
+            <button class="header-btn" onclick="window.App.navigateTo('projects')">🐍 Projects</button>
             <button id="themeToggleBtn" class="header-btn" onclick="window.App.toggleTheme()">🌙 Dark Mode</button>
         </div>
     </header>
@@ -447,65 +428,32 @@ table.data-table tr:hover { background: var(--bg-tertiary); }
         <!-- Sidebar Navigation -->
         <aside id="appSidebar" class="app-sidebar">
             <div class="sidebar-header-title">Structured Curriculum</div>
-            <ul id="sidebarNavList" class="sidebar-nav-list">
-                <!-- Injected via JavaScript -->
-            </ul>
+            <ul id="sidebarNavList" class="sidebar-nav-list"></ul>
             
-            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color); padding-left: 12px;">
-                <div class="sidebar-header-title">Directories & Resources</div>
+            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-color);">
+                <div class="sidebar-header-title">Directories & Tools</div>
                 <ul class="sidebar-nav-list">
-                    <li class="sidebar-nav-item"><a href="javascript:void(0);" onclick="window.App.navigateTo('tools', null)">🛠️ 100 AI Tools Directory</a></li>
-                    <li class="sidebar-nav-item"><a href="javascript:void(0);" onclick="window.App.navigateTo('free-apis', null)">🔌 Free AI APIs Page</a></li>
-                    <li class="sidebar-nav-item"><a href="javascript:void(0);" onclick="window.App.navigateTo('glossary', null)">📖 A-Z Glossary</a></li>
-                    <li class="sidebar-nav-item"><a href="javascript:void(0);" onclick="window.App.navigateTo('roadmap', null)">🗺️ Learning Roadmap</a></li>
+                    <li class="sidebar-nav-item"><a href="javascript:void(0);" onclick="window.App.navigateTo('tools')">🛠️ 100 AI Tools Directory</a></li>
+                    <li class="sidebar-nav-item"><a href="javascript:void(0);" onclick="window.App.navigateTo('free-apis')">🔌 Free AI APIs Page</a></li>
                 </ul>
             </div>
         </aside>
 
         <!-- Main Content Stage -->
-        <main id="mainContentStage" class="app-main">
-            <!-- Dynamic Content Injected Here -->
-        </main>
+        <main id="mainContentStage" class="app-main"></main>
 
     </div>
 
-    <!-- Footer -->
-    <footer class="app-footer">
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
-            <div class="footer-content">
-                <div>
-                    <div class="footer-brand">SachiTech Generative AI Academy</div>
-                    <div style="font-size: 0.85rem; margin-top: 4px;">Director: Sachin Thete • Complete Generative AI Notes, Tutorials, Tools & Projects</div>
-                </div>
-                <div class="footer-links">
-                    <a href="javascript:void(0);" onclick="window.App.navigateTo('home')">Home</a>
-                    <a href="javascript:void(0);" onclick="window.App.navigateTo('tools', null)">100 AI Tools</a>
-                    <a href="javascript:void(0);" onclick="window.App.navigateTo('free-apis', null)">Free AI APIs</a>
-                    <a href="javascript:void(0);" onclick="window.App.navigateTo('projects', null)">Projects</a>
-                    <a href="javascript:void(0);" onclick="window.App.navigateTo('quiz', null)">Quiz</a>
-                    <a href="javascript:void(0);" onclick="window.App.navigateTo('interview', null)">Interview Q&A</a>
-                    <a href="https://github.com/kunalpatilda/Generative-AI-Notes" target="_blank">GitHub</a>
-                </div>
-                <div>
-                    <span class="last-updated-badge">Last Verified: September 2026</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Search Modal -->
+    <!-- Modals -->
     <div id="searchModal" class="modal-backdrop" onclick="if(event.target === this) window.SearchEngine.closeModal()">
-        <div class="search-modal">
-            <div class="search-modal-header">
-                🔍
-                <input type="text" id="searchInput" class="search-modal-input" placeholder="Search lessons, tools, projects, interview questions, glossary...">
-                <button onclick="window.SearchEngine.closeModal()" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1.2rem;">✕</button>
-            </div>
-            <div id="searchResults" class="search-results-list"></div>
+        <div class="modal-content-box">
+            <button class="modal-close-btn" onclick="window.SearchEngine.closeModal()">✕</button>
+            <h3 style="margin-bottom:12px;">🔍 Search SachiTech Platform</h3>
+            <input type="text" id="searchInput" style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid var(--border-color);" placeholder="Search 100 AI tools, lessons, projects...">
+            <div id="searchResults" style="margin-top:16px;"></div>
         </div>
     </div>
 
-    <!-- Tool Details Modal -->
     <div id="toolDetailsModal" class="modal-backdrop" onclick="if(event.target === this) window.ToolsDirectory.closeDetails()">
         <div class="modal-content-box">
             <button class="modal-close-btn" onclick="window.ToolsDirectory.closeDetails()">✕</button>
@@ -513,68 +461,3004 @@ table.data-table tr:hover { background: var(--bg-tertiary); }
         </div>
     </div>
 
-    <!-- Tool Comparison Matrix Modal -->
     <div id="toolCompareModal" class="modal-backdrop" onclick="if(event.target === this) window.ToolsDirectory.closeCompareModal()">
-        <div class="modal-content-box" style="max-width:960px;">
+        <div class="modal-content-box" style="max-width:900px;">
             <button class="modal-close-btn" onclick="window.ToolsDirectory.closeCompareModal()">✕</button>
             <h2 style="color:var(--brand-primary); margin-bottom:16px;">📊 AI Tool Side-by-Side Comparison</h2>
             <div id="toolCompareBody"></div>
         </div>
     </div>
 
-    <!-- Tool Recommendation Wizard Modal -->
     <div id="recWizardModal" class="modal-backdrop" onclick="if(event.target === this) window.ToolsDirectory.closeRecommendationModal()">
         <div class="modal-content-box">
             <button class="modal-close-btn" onclick="window.ToolsDirectory.closeRecommendationModal()">✕</button>
             <h2 style="color:var(--brand-primary); margin-bottom:8px;">⚡ AI Tool Finder Wizard</h2>
             <p style="color:var(--text-secondary); margin-bottom:20px;">Answer 3 simple questions to get instant personalized AI tool recommendations.</p>
-            
-            <div class="form-group">
-                <label class="form-label">1. What do you want to do?</label>
-                <select id="wizGoal" class="form-select">
-                    <option value="code">Code & Build Software Applications</option>
-                    <option value="research">Research Academic Papers & Study Notes</option>
-                    <option value="image">Generate AI Images & Art</option>
-                    <option value="pdf">Analyze PDFs & Spreadsheets</option>
-                </select>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+                <div>
+                    <label style="font-weight:600; font-size:0.9rem;">1. What is your primary goal?</label>
+                    <select id="wizGoal" style="width:100%; padding:8px 12px; border-radius:6px; border:1px solid var(--border-color); margin-top:4px;">
+                        <option value="code">Code & Build Software Applications</option>
+                        <option value="research">Research Academic Papers & Study Notes</option>
+                        <option value="image">Generate AI Images & Art</option>
+                        <option value="pdf">Analyze PDFs & Spreadsheets</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-weight:600; font-size:0.9rem;">2. Budget Preference?</label>
+                    <select id="wizBudget" style="width:100%; padding:8px 12px; border-radius:6px; border:1px solid var(--border-color); margin-top:4px;">
+                        <option value="free-only">100% Free / Open Source Only</option>
+                        <option value="free-tier">Free Tier or Free Credits OK</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="window.ToolsDirectory.runRecommendationWizard()" style="margin-top:8px;">Get Recommendations ✨</button>
             </div>
-            
-            <div class="form-group">
-                <label class="form-label">2. What is your budget preference?</label>
-                <select id="wizBudget" class="form-select">
-                    <option value="free-only">100% Free / Open Source Only</option>
-                    <option value="free-tier">Free Tier or Free Credits OK</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label class="form-label">3. Your experience level?</label>
-                <select id="wizExp" class="form-select">
-                    <option value="beginner">Beginner / Student</option>
-                    <option value="developer">Developer / Advanced</option>
-                </select>
-            </div>
-            
-            <button class="btn btn-primary" onclick="window.ToolsDirectory.runRecommendationWizard()" style="margin-top:12px;">Get Recommendations ✨</button>
-            
-            <div id="recResultsContainer"></div>
+            <div id="recResultsContainer" style="margin-top:20px;"></div>
         </div>
     </div>
 
-    <!-- JavaScript Data Stores & System Engines -->
-    <script src="js/data/curriculum.js"></script>
-    <script src="js/data/tools.js"></script>
-    <script src="js/data/projects.js"></script>
-    <script src="js/data/quizzes.js"></script>
-    <script src="js/data/interview.js"></script>
-    <script src="js/data/exam.js"></script>
-    <script src="js/data/glossary.js"></script>
+    <!-- EMBEDDED JAVASCRIPT SYSTEM ENGINES -->
+    <script>
+    window.AI_TOOLS_DATA = [
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Conversational AI & Writing assistance",
+    "bestFor": "General QA, writing essays, coding assistance & web search",
+    "officialUrl": "https://chatgpt.com",
+    "apiUrl": "https://platform.openai.com",
+    "apiAvailable": true,
+    "limitations": "Free tier has hourly usage caps on GPT-4o; falls back to GPT-4o mini.",
+    "freeFeatures": [
+      "Access to GPT-4o mini and limited GPT-4o",
+      "DALL-E 3 image creation (limited)",
+      "Web browsing and file uploads"
+    ],
+    "paidFeatures": [
+      "Unlimited GPT-4o access",
+      "Advanced Voice Mode",
+      "Custom GPT creation & Sora video preview"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "gemini",
+    "name": "Google Gemini",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Multimodal Chat & Real-time Web Search",
+    "bestFor": "Google Workspace integration & real-time search synthesis",
+    "officialUrl": "https://gemini.google.com",
+    "apiUrl": "https://aistudio.google.com",
+    "apiAvailable": true,
+    "limitations": "Gemini Advanced features require paid Gemini AI Premium plan.",
+    "freeFeatures": [
+      "Gemini 1.5 Flash multimodal access",
+      "YouTube & Google Workspace extension access",
+      "Imagen 3 image generation"
+    ],
+    "paidFeatures": [
+      "Gemini 1.5 Pro with 2M context window",
+      "Deep research features & priority access"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Deep Reasoning, Coding & Document Analysis",
+    "bestFor": "Nuanced prose writing, code architecture & 200k token analysis",
+    "officialUrl": "https://claude.ai",
+    "apiUrl": "https://console.anthropic.com",
+    "apiAvailable": true,
+    "limitations": "Strict daily message quota on free tier depending on peak traffic.",
+    "freeFeatures": [
+      "Claude 3.5 Sonnet access",
+      "Artifacts interactive preview panel",
+      "Document upload analysis"
+    ],
+    "paidFeatures": [
+      "5x usage limits",
+      "Claude 3 Opus & Sonnet priority",
+      "Projects feature for team context"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "copilot",
+    "name": "Microsoft Copilot",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "AI Search Engine & Creative Assistant",
+    "bestFor": "Web research with Bing citation links & DALL-E 3 image generation",
+    "officialUrl": "https://copilot.microsoft.com",
+    "apiUrl": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+    "apiAvailable": true,
+    "limitations": "Turn limits per chat session (30 responses per topic).",
+    "freeFeatures": [
+      "GPT-4 Turbo access for web search",
+      "DALL-E 3 image generator boosts",
+      "Notebook mode"
+    ],
+    "paidFeatures": [
+      "Microsoft 365 Copilot Word/Excel integration",
+      "Priority GPT-4 access"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Conversational Search & Answer Engine",
+    "bestFor": "Fact-checked research with direct academic & news citations",
+    "officialUrl": "https://perplexity.ai",
+    "apiUrl": "https://docs.perplexity.ai",
+    "apiAvailable": true,
+    "limitations": "Pro search queries limited to 5 every 4 hours on free account.",
+    "freeFeatures": [
+      "Unlimited standard web search queries",
+      "Source citations & follow-up questions",
+      "File attachment Q&A"
+    ],
+    "paidFeatures": [
+      "300+ daily Pro search queries",
+      "Model selection (Claude 3.5, GPT-4o, Sonar)",
+      "API credit allocation"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "High-Performance Open Reasoning & Coding",
+    "bestFor": "Complex mathematical logic, code debugging & open-weights deployment",
+    "officialUrl": "https://chat.deepseek.com",
+    "apiUrl": "https://platform.deepseek.com",
+    "apiAvailable": true,
+    "limitations": "Free web interface can hit peak traffic slowdowns; self-hosting requires local GPU.",
+    "freeFeatures": [
+      "DeepSeek-V3 & DeepSeek-R1 web access",
+      "Open weights download on Hugging Face",
+      "Unlimited web chat"
+    ],
+    "paidFeatures": [
+      "Pay-per-token API access with high throughput",
+      "Dedicated inference instances"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "mistral-le-chat",
+    "name": "Mistral Le Chat",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Multilingual European AI Chat & Vision",
+    "bestFor": "Privacy-conscious users, fast multilingual output & canvas editing",
+    "officialUrl": "https://chat.mistral.ai",
+    "apiUrl": "https://console.mistral.ai",
+    "apiAvailable": true,
+    "limitations": "Canvas live execution rate-limited on free plan.",
+    "freeFeatures": [
+      "Mistral Large & Pixtral vision access",
+      "Canvas code/text workspace",
+      "Web search integration"
+    ],
+    "paidFeatures": [
+      "La Plateforme API commercial tiers",
+      "Fine-tuning services"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "meta-ai",
+    "name": "Meta AI",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Social Assistant & Instant Image Generation",
+    "bestFor": "WhatsApp, Instagram, Messenger integration & rapid image generation",
+    "officialUrl": "https://meta.ai",
+    "apiUrl": "https://llama.meta.com",
+    "apiAvailable": true,
+    "limitations": "Geographic availability restrictions apply in certain regions.",
+    "freeFeatures": [
+      "Llama 3 powered chat",
+      "Real-time 'Imagine' image generation",
+      "Social media integration"
+    ],
+    "paidFeatures": [
+      "100% Free platform; open model weights available"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "grok",
+    "name": "Grok",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Real-time X/Twitter Search & Uncensored Chat",
+    "bestFor": "Breaking news analysis, trending topic research & image generation",
+    "officialUrl": "https://x.ai",
+    "apiUrl": "https://docs.x.ai",
+    "apiAvailable": true,
+    "limitations": "Limited daily free query allowance on web interface.",
+    "freeFeatures": [
+      "Grok-2 Mini access on web",
+      "Real-time X post retrieval",
+      "Flux image generation"
+    ],
+    "paidFeatures": [
+      "Full Grok-2 access",
+      "Higher rate limits & developer API credits"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "pi",
+    "name": "Pi",
+    "category": "AI CHAT & ASSISTANTS",
+    "catNum": 1,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Empathetic Conversational Assistant",
+    "bestFor": "Personal reflection, coaching, casual conversation & speech playback",
+    "officialUrl": "https://pi.ai",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "No document uploading or code execution capabilities.",
+    "freeFeatures": [
+      "Unlimited conversational access",
+      "Realistic voice synthesis options",
+      "Cross-platform mobile apps"
+    ],
+    "paidFeatures": [
+      "100% Free platform by Inflection AI"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "notebooklm",
+    "name": "NotebookLM",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Source-Grounded Research & Audio Overviews",
+    "bestFor": "Converting PDFs, Google Docs & slides into podcast-style Audio Overviews",
+    "officialUrl": "https://notebooklm.google.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Max 50 sources per notebook; strict source size limits.",
+    "freeFeatures": [
+      "Gemini 1.5 Pro grounded synthesis",
+      "2-person AI Audio Overview generation",
+      "Citations tied strictly to uploaded files"
+    ],
+    "paidFeatures": [
+      "100% Free tool provided by Google Labs"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "storm-ai",
+    "name": "STORM AI",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Automated Wikipedia-Style Research Synthesis",
+    "bestFor": "Generating full long-form academic research articles with citations",
+    "officialUrl": "https://github.com/stanford-oval/storm",
+    "apiUrl": "https://storm.genie.stanford.edu",
+    "apiAvailable": true,
+    "limitations": "Self-hosting requires local API keys (OpenAI / You.com).",
+    "freeFeatures": [
+      "Stanford web demo access",
+      "Open-source Python code repository",
+      "Multi-perspective Q&A report generation"
+    ],
+    "paidFeatures": [
+      "Cloud hosting costs depend on selected API providers"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "google-ai-studio",
+    "name": "Google AI Studio",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Developer Model Playground & Long-Context Testing",
+    "bestFor": "Experimenting with 2 Million token context windows for research papers",
+    "officialUrl": "https://aistudio.google.com",
+    "apiUrl": "https://ai.google.dev",
+    "apiAvailable": true,
+    "limitations": "Free tier data may be logged for model quality improvement.",
+    "freeFeatures": [
+      "Gemini 1.5 Pro & Flash free API keys",
+      "System prompt tuning & safety controls",
+      "Video/audio long-context upload"
+    ],
+    "paidFeatures": [
+      "Paid Tier via Google Cloud Vertex AI with SLA & data privacy"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "elicit",
+    "name": "Elicit",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Automated Literature Review Assistant",
+    "bestFor": "Extracting key findings, sample sizes & methodologies from papers",
+    "officialUrl": "https://elicit.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "5,000 free credits on sign-up; additional searches require subscription.",
+    "freeFeatures": [
+      "Search 200M+ academic papers",
+      "Extract structured data tables from PDFs",
+      "Synthesis summary across top 4 papers"
+    ],
+    "paidFeatures": [
+      "Unlimited search credits",
+      "High-accuracy extraction modes"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Evidence-Based Science Search Engine",
+    "bestFor": "Verifying medical, scientific & social science claims with peer reviews",
+    "officialUrl": "https://consensus.app",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Limited free Consensus Meter & Synthesize queries per month.",
+    "freeFeatures": [
+      "Unlimited paper search",
+      "AI snapshot summaries",
+      "Citation exports"
+    ],
+    "paidFeatures": [
+      "Unlimited Consensus Meter analysis",
+      "GPT-4 powered deep synthesis"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "scispace",
+    "name": "SciSpace",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Interactive Research Paper Reader & Copilot",
+    "bestFor": "Explaining complex math formulas, jargon & data tables in research PDFs",
+    "officialUrl": "https://typeset.io",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Copilot prompt limit on free plan per 24 hours.",
+    "freeFeatures": [
+      "Read and highlight PDFs with AI Q&A",
+      "Multilingual translation of scientific papers",
+      "Literature review tables"
+    ],
+    "paidFeatures": [
+      "Unlimited AI Copilot queries",
+      "Advanced plagiarism checker integration"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "semantic-scholar",
+    "name": "Semantic Scholar",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "AI-Driven Academic Graph Search Engine",
+    "bestFor": "Tracking citation graphs, paper influence & influential citations",
+    "officialUrl": "https://semanticscholar.org",
+    "apiUrl": "https://api.semanticscholar.org",
+    "apiAvailable": true,
+    "limitations": "Search filters basic compared to paid proprietary databases.",
+    "freeFeatures": [
+      "100% Free paper discovery",
+      "TLDR AI-generated paper bullet points",
+      "Free REST API for academic projects"
+    ],
+    "paidFeatures": [
+      "Fully free non-profit platform by Allen Institute for AI"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "researchrabbit",
+    "name": "ResearchRabbit",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Visual Paper Discovery & Citation Graph Mapping",
+    "bestFor": "Exploring networks of papers, authors, and co-citations visually",
+    "officialUrl": "https://researchrabbit.ai",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Requires initial manual setup to sync with reference managers.",
+    "freeFeatures": [
+      "Unlimited visual citation maps",
+      "Zotero integration",
+      "Email alerts for newly published papers"
+    ],
+    "paidFeatures": [
+      "100% Free platform for academic researchers"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "connected-papers",
+    "name": "Connected Papers",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Visual Graph Generator for Academic Field Overview",
+    "bestFor": "Discovering foundational & derivative papers in a new field of study",
+    "officialUrl": "https://connectedpapers.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "5 free graph generation credits per month.",
+    "freeFeatures": [
+      "Interactive similarity graphs",
+      "Prior & derivative work lists",
+      "BibTeX exports"
+    ],
+    "paidFeatures": [
+      "Unlimited graphs per month",
+      "Saved academic bibliographies"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "humata",
+    "name": "Humata",
+    "category": "AI RESEARCH & STUDY",
+    "catNum": 2,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Vector Q&A Over Complex Research PDFs",
+    "bestFor": "Fast document extraction & cross-file synthesis for dense reports",
+    "officialUrl": "https://humata.ai",
+    "apiUrl": "https://humata.ai/developers",
+    "apiAvailable": true,
+    "limitations": "60 total free PDF pages limit on free tier account.",
+    "freeFeatures": [
+      "60 free processed PDF pages",
+      "Page citation links for every answer",
+      "Export generated summaries"
+    ],
+    "paidFeatures": [
+      "Up to 2,000 pages processed per month",
+      "OCR scanning for scanned documents"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "canva-ai",
+    "name": "Canva Magic Media",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Text-to-Image & Graphic Asset Design",
+    "bestFor": "Creating social graphics, presentations & marketing posters with AI art",
+    "officialUrl": "https://canva.com",
+    "apiUrl": "https://www.canva.dev",
+    "apiAvailable": true,
+    "limitations": "50 lifetime free Magic Media creation credits.",
+    "freeFeatures": [
+      "50 text-to-image uses",
+      "Basic background remover (limited)",
+      "Magic Edit & Eraser"
+    ],
+    "paidFeatures": [
+      "500 monthly AI credits",
+      "Pro brand kit & high-res PNG downloads"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "ms-designer",
+    "name": "Microsoft Designer",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "DALL-E 3 Graphic & Banner Creator",
+    "bestFor": "Quick invitation cards, social posts & banner designs with text prompts",
+    "officialUrl": "https://designer.microsoft.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Requires free Microsoft account login; daily boost credits apply.",
+    "freeFeatures": [
+      "DALL-E 3 powered text-to-image",
+      "AI canvas resizing & sticker generation",
+      "Generative erase"
+    ],
+    "paidFeatures": [
+      "100% Free with Microsoft Account"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Commercial-Safe Generative Fill & Vector Art",
+    "bestFor": "Photographic generative fill, vector artwork & Adobe Photoshop workflow",
+    "officialUrl": "https://firefly.adobe.com",
+    "apiUrl": "https://developer.adobe.com/firefly-api",
+    "apiAvailable": true,
+    "limitations": "25 free generative credits per month.",
+    "freeFeatures": [
+      "Generative Fill web editor",
+      "Text to Vector Graphic generation",
+      "Commercially safe trained dataset"
+    ],
+    "paidFeatures": [
+      "Higher credit allocations",
+      "No watermark on downloads"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "ideogram",
+    "name": "Ideogram",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "AI Image Generation with Legible Text Rendering",
+    "bestFor": "Typography logos, posters, t-shirt prints & greeting card design",
+    "officialUrl": "https://ideogram.ai",
+    "apiUrl": "https://developer.ideogram.ai",
+    "apiAvailable": true,
+    "limitations": "10 slow generation credits daily on free tier.",
+    "freeFeatures": [
+      "Ideogram 2.0 text rendering model",
+      "Public gallery creation",
+      "Basic aspect ratios"
+    ],
+    "paidFeatures": [
+      "Priority fast queue",
+      "Private image generation & high-res downloads"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "leonardo-ai",
+    "name": "Leonardo AI",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Fine-Tuned AI Concept Art & Game Asset Generation",
+    "bestFor": "Photorealism, 3D textures, game sprites & character art",
+    "officialUrl": "https://leonardo.ai",
+    "apiUrl": "https://docs.leonardo.ai",
+    "apiAvailable": true,
+    "limitations": "150 daily resetting fast generation credits.",
+    "freeFeatures": [
+      "Alchemy photorealism mode (limited)",
+      "Preset diffusion models",
+      "150 daily fast tokens"
+    ],
+    "paidFeatures": [
+      "Custom LoRA fine-tuning",
+      "Private generations & unlimited relaxed queue"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "playground-ai",
+    "name": "Playground AI",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Canvas-Based Diffusion Image Editing",
+    "bestFor": "Combining multiple images, outpainting canvas & object masking",
+    "officialUrl": "https://playground.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "50 free image generations per day.",
+    "freeFeatures": [
+      "Playground v2.5 model",
+      "Infinite canvas layout",
+      "Commercial usage allowed"
+    ],
+    "paidFeatures": [
+      "1,000 images per day",
+      "Faster rendering & Pro model access"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "krea",
+    "name": "Krea AI",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Real-Time Interactive Generation & Upscaling",
+    "bestFor": "Real-time canvas sketching to high-res photorealistic render",
+    "officialUrl": "https://krea.ai",
+    "apiUrl": "https://docs.krea.ai",
+    "apiAvailable": true,
+    "limitations": "Daily generation quotas on free plan.",
+    "freeFeatures": [
+      "Real-time canvas drawing to AI",
+      "AI Image Enhancer & Upscaler",
+      "Pattern generator"
+    ],
+    "paidFeatures": [
+      "Unlimited real-time generation",
+      "Video generation & commercial license"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "craiyon",
+    "name": "Craiyon",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Unlimited Casual Text-to-Image Generation",
+    "bestFor": "Quick meme creation & rough visual concept sketches",
+    "officialUrl": "https://craiyon.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Ad-supported; slower output rendering speed.",
+    "freeFeatures": [
+      "Unlimited image generations",
+      "Art, Drawing & Photo styles",
+      "No account required"
+    ],
+    "paidFeatures": [
+      "Ad-free fast rendering",
+      "Watermark removal"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "mage-space",
+    "name": "Mage.space",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Open-Source Stable Diffusion Model Host",
+    "bestFor": "Exploring SD 1.5, SDXL & custom LoRA community checkpoints",
+    "officialUrl": "https://mage.space",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Premium checkpoints & high resolution locked behind subscription.",
+    "freeFeatures": [
+      "Unlimited SD 1.5 generations",
+      "Basic negative prompts",
+      "Public gallery search"
+    ],
+    "paidFeatures": [
+      "SDXL, Flux & realistic LoRAs",
+      "Multiple parallel renders"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "automatic1111",
+    "name": "Stable Diffusion (A1111)",
+    "category": "AI IMAGE GENERATION & DESIGN",
+    "catNum": 3,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Local GPU Image Generation & Model Control",
+    "bestFor": "100% offline private art, ControlNet, LoRA training & zero API costs",
+    "officialUrl": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "apiUrl": "http://127.0.0.1:7860/docs",
+    "apiAvailable": true,
+    "limitations": "Requires local NVIDIA GPU with 8GB+ VRAM.",
+    "freeFeatures": [
+      "100% Free open-source WebUI",
+      "ControlNet, IP-Adapter & Inpainting",
+      "Local REST API"
+    ],
+    "paidFeatures": [
+      "Software 100% free; user hardware infrastructure required"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "runway",
+    "name": "Runway Gen-2 / Gen-3",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Text-to-Video & Camera Motion Control",
+    "bestFor": "Cinematic AI video clips, motion brush effects & VFX elements",
+    "officialUrl": "https://runwayml.com",
+    "apiUrl": "https://docs.runwayml.com",
+    "apiAvailable": true,
+    "limitations": "125 non-replenishing initial free credits; watermarked exports.",
+    "freeFeatures": [
+      "Gen-2 & Gen-3 Alpha text-to-video test",
+      "Motion Brush controls",
+      "720p watermarked download"
+    ],
+    "paidFeatures": [
+      "Unlimited relaxed video queue",
+      "4K video upscaling & watermark removal"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "pika",
+    "name": "Pika Labs",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "3D Animation, Lip Sync & Video Editing",
+    "bestFor": "Short animated video clips, lip-syncing & localized object modifications",
+    "officialUrl": "https://pika.art",
+    "apiUrl": "https://pika.art/docs",
+    "apiAvailable": true,
+    "limitations": "250 initial credits; watermark on free video downloads.",
+    "freeFeatures": [
+      "3-second video generations",
+      "Pikaffects motion effects",
+      "Sound effect auto-generation"
+    ],
+    "paidFeatures": [
+      "Video expansion canvas",
+      "No watermark & commercial licensing"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "kling-ai",
+    "name": "Kling AI",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "High-Fidelity 1080p AI Video Generation",
+    "bestFor": "Realistic human physical movements & long 5s-10s video generation",
+    "officialUrl": "https://klingai.com",
+    "apiUrl": "https://klingai.com/developer",
+    "apiAvailable": true,
+    "limitations": "66 daily claimable free credits.",
+    "freeFeatures": [
+      "Daily 66 free credits",
+      "Standard mode 5s 720p video generation",
+      "Camera motion control"
+    ],
+    "paidFeatures": [
+      "Professional 1080p mode",
+      "10-second video extension & high queue priority"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "luma-dream-machine",
+    "name": "Luma Dream Machine",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Physics-Compliant Fast 3D Video Generation",
+    "bestFor": "Realistic camera movement, physics interactions & high-speed rendering",
+    "officialUrl": "https://lumalabs.ai/dream-machine",
+    "apiUrl": "https://lumalabs.ai/api",
+    "apiAvailable": true,
+    "limitations": "30 free video generation credits per month.",
+    "freeFeatures": [
+      "30 monthly generation credits",
+      "Camera pan & zoom keyframing",
+      "High frame-rate 720p outputs"
+    ],
+    "paidFeatures": [
+      "Commercial usage license",
+      "Fast track generation queue"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "capcut-ai",
+    "name": "CapCut AI Video",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Auto-Subtitles, Script-to-Video & Shorts Editor",
+    "bestFor": "Editing TikToks, Reels, YouTube Shorts with auto-captioning & AI effects",
+    "officialUrl": "https://capcut.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Pro AI effects & certain stock assets locked behind subscription.",
+    "freeFeatures": [
+      "Auto-caption voice recognition",
+      "Text-to-speech voiceovers",
+      "Basic AI background removal"
+    ],
+    "paidFeatures": [
+      "CapCut Pro cloud storage & premium templates",
+      "1080p 60fps export presets"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "invideo-ai",
+    "name": "InVideo AI",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Full Script-to-Video Automation Engine",
+    "bestFor": "Faceless YouTube video creation with automated script, stock footage & voiceover",
+    "officialUrl": "https://invideo.io",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "10 minutes per week watermarked export on free tier.",
+    "freeFeatures": [
+      "Generate 4 video scripts weekly",
+      "AI clone voiceovers",
+      "In-line prompt video editor"
+    ],
+    "paidFeatures": [
+      "Watermark-free exports",
+      "iStock premium media stock library"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "veed-ai",
+    "name": "VEED AI",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Online AI Video Editor & Auto Subtitles",
+    "bestFor": "Translating subtitles, removing background noise & social video creation",
+    "officialUrl": "https://veed.io",
+    "apiUrl": "https://www.veed.io/developers",
+    "apiAvailable": true,
+    "limitations": "10 minute export cap; VEED watermark on free plan.",
+    "freeFeatures": [
+      "Auto subtitle generator (limited)",
+      "AI eye contact correction trial",
+      "720p export"
+    ],
+    "paidFeatures": [
+      "4K export without watermark",
+      "Full video translation to 50+ languages"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "haiper-ai",
+    "name": "Haiper AI",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Perceptual Motion Video Generation",
+    "bestFor": "Stylized animation clips, video repainting & motion control",
+    "officialUrl": "https://haiper.ai",
+    "apiUrl": "https://haiper.ai/api",
+    "apiAvailable": true,
+    "limitations": "Daily free generation credits cap.",
+    "freeFeatures": [
+      "HD video generations",
+      "Video repainting & style transfers",
+      "Community prompt explorer"
+    ],
+    "paidFeatures": [
+      "Commercial rights",
+      "Unlimited fast generations"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "AI Avatar Presenter Video Creation",
+    "bestFor": "Corporate training videos, video localization & custom lip-synced avatars",
+    "officialUrl": "https://heygen.com",
+    "apiUrl": "https://docs.heygen.com",
+    "apiAvailable": true,
+    "limitations": "1 free non-replenishing credit (1 minute watermarked test video).",
+    "freeFeatures": [
+      "1 minute avatar video creation",
+      "Text-to-speech avatar synthesis",
+      "720p video export"
+    ],
+    "paidFeatures": [
+      "Instant custom photo avatars",
+      "Multi-language video translator & API integration"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "category": "AI VIDEO",
+    "catNum": 4,
+    "freeStatus": "\u26a0\ufe0f LIMITED FREE",
+    "mainUse": "Enterprise AI Avatar Video Presenter",
+    "bestFor": "HR training, customer onboarding & video translation across 140+ languages",
+    "officialUrl": "https://synthesia.io",
+    "apiUrl": "https://docs.synthesia.io",
+    "apiAvailable": true,
+    "limitations": "Free demo allows 36-second video preview; full downloads require paid subscription.",
+    "freeFeatures": [
+      "Web interactive demo video creator",
+      "Script test with 160+ avatars",
+      "Preview player"
+    ],
+    "paidFeatures": [
+      "Full 1080p MP4 download",
+      "Personal studio avatar recording"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Ultra-Realistic Text-to-Speech & Voice Cloning",
+    "bestFor": "Audiobook narration, video voiceovers & voice translation",
+    "officialUrl": "https://elevenlabs.io",
+    "apiUrl": "https://elevenlabs.io/docs/api-reference",
+    "apiAvailable": true,
+    "limitations": "10,000 free characters per month; attribution to ElevenLabs required.",
+    "freeFeatures": [
+      "Access to default realistic voice library",
+      "Text-to-speech in 32 languages",
+      "Sound Effects generator"
+    ],
+    "paidFeatures": [
+      "Instant & Professional Voice Cloning",
+      "Commercial usage license & 100k+ chars"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "suno",
+    "name": "Suno AI",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Radio-Quality Text-to-Song Generation",
+    "bestFor": "Creating full songs complete with instrumental tracks, lyrics & vocals",
+    "officialUrl": "https://suno.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "50 daily free credits (10 song clips); non-commercial usage only.",
+    "freeFeatures": [
+      "50 daily generation credits",
+      "v3.5 music model access",
+      "Custom prompt & lyrics entry"
+    ],
+    "paidFeatures": [
+      "500+ monthly credits",
+      "Commercial copyright ownership of generated songs"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "udio",
+    "name": "Udio",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "High-Fidelity Musical Composition & Stem Editing",
+    "bestFor": "Intricate genre blending, musical solos & vocal track control",
+    "officialUrl": "https://udio.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "100 free monthly creation credits.",
+    "freeFeatures": [
+      "Generate 32-second song extensions",
+      "Stem separation preview",
+      "Community song remixing"
+    ],
+    "paidFeatures": [
+      "High-definition WAV download",
+      "Fast queue priority & commercial rights"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "speechify",
+    "name": "Speechify",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Speed-Reading Text-to-Speech Engine",
+    "bestFor": "Listening to textbooks, PDFs, web articles & documents on mobile/desktop",
+    "officialUrl": "https://speechify.com",
+    "apiUrl": "https://speechify.com/api",
+    "apiAvailable": true,
+    "limitations": "Free tier restricted to standard quality voice models.",
+    "freeFeatures": [
+      "10 standard reading voices",
+      "Speed controls up to 4x",
+      "Web browser extension"
+    ],
+    "paidFeatures": [
+      "HD natural AI voice library (Snoop Dogg, Gwyneth Paltrow)",
+      "OCR photo reading"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "playht",
+    "name": "PlayHT",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Conversational AI Voice & Podcast Generator",
+    "bestFor": "Real-time voice streaming APIs for AI agents & audio articles",
+    "officialUrl": "https://play.ht",
+    "apiUrl": "https://docs.play.ht",
+    "apiAvailable": true,
+    "limitations": "12,500 non-commercial free characters upon sign-up.",
+    "freeFeatures": [
+      "Access to PlayHT 2.0 Turbo voice engine",
+      "Podcast generator preview",
+      "MP3 download"
+    ],
+    "paidFeatures": [
+      "Commercial attribution waiver",
+      "Voice cloning & low-latency API access"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "adobe-podcast",
+    "name": "Adobe Podcast",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "AI Speech Enhancement & Mic Checker",
+    "bestFor": "Removing room reverb, echo & background noise from voice recordings",
+    "officialUrl": "https://podcast.adobe.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Max 30 min per audio file; 1 hour total daily limit.",
+    "freeFeatures": [
+      "Enhance Speech algorithm (removes background noise)",
+      "Mic Check acoustic setup tool",
+      "WAV/MP3 processing"
+    ],
+    "paidFeatures": [
+      "Bulk processing & custom strength adjustments"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "whisper",
+    "name": "OpenAI Whisper",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Automatic Speech Recognition (ASR) & Translation",
+    "bestFor": "Local offline audio transcription with 99%+ multi-language accuracy",
+    "officialUrl": "https://github.com/openai/whisper",
+    "apiUrl": "https://platform.openai.com/docs/guides/speech-to-text",
+    "apiAvailable": true,
+    "limitations": "Local execution requires GPU/CPU hardware compute.",
+    "freeFeatures": [
+      "100% Free open-source model weights (tiny to large-v3)",
+      "99+ languages transcribed & translated",
+      "Zero cloud API cost"
+    ],
+    "paidFeatures": [
+      "Software 100% free; OpenAI hosted API billed per minute"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "voice-ai",
+    "name": "Voice.ai",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Real-Time Voice Changer & Morphing",
+    "bestFor": "Live streaming, Discord voice morphing & custom voice universe creation",
+    "officialUrl": "https://voice.ai",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Voice model training queued on free user credits.",
+    "freeFeatures": [
+      "Real-time voice changing software",
+      "User-generated voice universe access",
+      "Free daily credit claim"
+    ],
+    "paidFeatures": [
+      "Instant voice training credits",
+      "HD audio processing without latency"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "aiva",
+    "name": "AIVA",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Emotional AI Classical & Cinematic Music Composition",
+    "bestFor": "Composing symphonic soundtracks, game music scores & MIDI tracks",
+    "officialUrl": "https://aiva.ai",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "3 free downloads monthly; AIVA owns copyright on free tier.",
+    "freeFeatures": [
+      "3 monthly downloads",
+      "Full sheet music & MIDI composition",
+      "Pre-set musical profiles"
+    ],
+    "paidFeatures": [
+      "Copyright ownership transfer",
+      "WAV & stem downloads"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "soundraw",
+    "name": "Soundraw",
+    "category": "AI AUDIO, MUSIC & VOICE",
+    "catNum": 5,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Royalty-Free AI Background Music Generator",
+    "bestFor": "Creating background music tracks customized by tempo, genre & mood",
+    "officialUrl": "https://soundraw.io",
+    "apiUrl": "https://soundraw.io/api",
+    "apiAvailable": true,
+    "limitations": "Unlimited creation preview; audio downloads require subscription.",
+    "freeFeatures": [
+      "Unlimited song creation & custom structure editing",
+      "Genre & mood filtering",
+      "Bookmark tracks"
+    ],
+    "paidFeatures": [
+      "Unlimited audio file downloads with commercial license"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "copilot-code",
+    "name": "GitHub Copilot",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\u26a0\ufe0f LIMITED FREE",
+    "mainUse": "AI Pair Programmer in VS Code & JetBrains",
+    "bestFor": "Real-time autocomplete suggestions, inline chat & CLI terminal commands",
+    "officialUrl": "https://github.com/features/copilot",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Free access limited to verified students, teachers & top open-source maintainers.",
+    "freeFeatures": [
+      "Unlimited completions for verified students/maintainers",
+      "Copilot Chat in IDE",
+      "Pull Request summaries"
+    ],
+    "paidFeatures": [
+      "Individual ($10/mo) & Enterprise subscription plans"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "gemini-code-assist",
+    "name": "Gemini Code Assist",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Enterprise IDE Assistant & Cloud Code Q&A",
+    "bestFor": "Google Cloud infrastructure deployment, context-aware inline code completion",
+    "officialUrl": "https://cloud.google.com/products/gemini/code-assist",
+    "apiUrl": "",
+    "apiAvailable": true,
+    "limitations": "Free monthly usage quotas apply.",
+    "freeFeatures": [
+      "VS Code & IntelliJ extensions",
+      "Full repository context chat",
+      "Unit test generation"
+    ],
+    "paidFeatures": [
+      "Google Cloud enterprise admin security & audit logs"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Fast Free Code Completion & IDE Chat Extension",
+    "bestFor": "Individual developers wanting a free perpetual alternative to GitHub Copilot",
+    "officialUrl": "https://codeium.com",
+    "apiUrl": "https://codeium.com/api",
+    "apiAvailable": true,
+    "limitations": "Free forever for individuals; enterprise security features paid.",
+    "freeFeatures": [
+      "Unlimited AI autocomplete in 40+ IDEs",
+      "In-IDE Codeium Chat",
+      "Support for 70+ programming languages"
+    ],
+    "paidFeatures": [
+      "Teams & Enterprise self-hosted deployment options"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "AI-Native Code Editor (VS Code Fork)",
+    "bestFor": "Repository-wide AI edit, agentic multi-file refactoring & terminal debugging",
+    "officialUrl": "https://cursor.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "200 free completions; 50 fast premium request credits.",
+    "freeFeatures": [
+      "Cmd+K inline code generator",
+      "Full repository indexing (@codebase)",
+      "Cursor Tab fast autocomplete"
+    ],
+    "paidFeatures": [
+      "Pro $20/mo for 500 fast Claude 3.5 Sonnet requests"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "windsurf",
+    "name": "Windsurf",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Agentic IDE with AI Flows & Cascade Engine",
+    "bestFor": "Collaborative human-AI agent coding with continuous context tracking",
+    "officialUrl": "https://codeium.com/windsurf",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Limited monthly Cascade agent prompt credits on free plan.",
+    "freeFeatures": [
+      "Cascade agent mode",
+      "Real-time context synchronization",
+      "VS Code extension compatibility"
+    ],
+    "paidFeatures": [
+      "Unlimited fast agent prompts & enterprise policy controls"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "replit",
+    "name": "Replit Agent",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "In-Browser Cloud IDE & Natural Language App Builder",
+    "bestFor": "Building full-stack web applications instantly from natural language prompts",
+    "officialUrl": "https://replit.com",
+    "apiUrl": "https://docs.replit.com",
+    "apiAvailable": true,
+    "limitations": "Free cloud deployments sleep when inactive; Agent credits limited.",
+    "freeFeatures": [
+      "Free in-browser code execution",
+      "Basic AI code autocomplete",
+      "Public Repl hosting"
+    ],
+    "paidFeatures": [
+      "Replit Agent full autonomy mode",
+      "Always-on reserved cloud compute"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "tabnine",
+    "name": "Tabnine",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Privacy-First AI Code Autocomplete Engine",
+    "bestFor": "Developers requiring zero data retention, local execution & SOC-2 compliance",
+    "officialUrl": "https://tabnine.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Basic short inline completions free; chat requires Pro.",
+    "freeFeatures": [
+      "Local short code completion",
+      "Privacy guarantee (code never leaves machine)",
+      "All major IDE extensions"
+    ],
+    "paidFeatures": [
+      "Tabnine Chat (Pro)",
+      "Custom model fine-tuning on company codebase"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "continue-dev",
+    "name": "Continue.dev",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Open-Source Copilot Extension for VS Code / JetBrains",
+    "bestFor": "Connecting local Ollama models or custom API endpoints into your IDE",
+    "officialUrl": "https://continue.dev",
+    "apiUrl": "https://docs.continue.dev",
+    "apiAvailable": true,
+    "limitations": "Software is 100% free; depends on connected model provider API costs.",
+    "freeFeatures": [
+      "100% Open source plugin",
+      "Connect to Ollama, LM Studio, Claude, OpenAI",
+      "Custom system prompts"
+    ],
+    "paidFeatures": [
+      "Software 100% free; user provides model API keys"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "cody",
+    "name": "Sourcegraph Cody",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Repository-Wide Code Search & AI Assistant",
+    "bestFor": "Understanding large legacy codebases & generating multi-file code changes",
+    "officialUrl": "https://sourcegraph.com/cody",
+    "apiUrl": "https://sourcegraph.com/docs/cody",
+    "apiAvailable": true,
+    "limitations": "500 free autocomplete suggestions & 20 free chats per month.",
+    "freeFeatures": [
+      "Claude 3.5 Sonnet powered chat",
+      "Codebase context graph indexing",
+      "VS Code & JetBrains plugins"
+    ],
+    "paidFeatures": [
+      "Unlimited chat & completions",
+      "Enterprise security enforcement"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "supermaven",
+    "name": "Supermaven",
+    "category": "AI CODING",
+    "catNum": 6,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Ultra-Fast 300,000 Token Context Code Completion",
+    "bestFor": "Sub-50ms latency code completions across giant repositories",
+    "officialUrl": "https://supermaven.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Free tier includes standard speed model; Pro includes Babble model.",
+    "freeFeatures": [
+      "300k token context window",
+      "Fast autocomplete extension",
+      "Zero code logging option"
+    ],
+    "paidFeatures": [
+      "Supermaven Pro for ultra-fast custom model architecture"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly AI",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Grammar Checking, AI Rewrite & Tone Polish",
+    "bestFor": "Polishing emails, essays & documents directly inside web browser text fields",
+    "officialUrl": "https://grammarly.com",
+    "apiUrl": "https://developer.grammarly.com",
+    "apiAvailable": true,
+    "limitations": "Advanced stylistic rewrites & plagiarism detection require Premium.",
+    "freeFeatures": [
+      "Grammar, spelling & punctuation check",
+      "100 AI prompt responses monthly",
+      "Tone detection"
+    ],
+    "paidFeatures": [
+      "Full paragraph rewrites",
+      "Vocabulary enhancement & plagiarism scanner"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "quillbot",
+    "name": "QuillBot",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "AI Paraphraser, Summarizer & Grammar Checker",
+    "bestFor": "Rewriting sentences to avoid repetition & summarizing long articles",
+    "officialUrl": "https://quillbot.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Free paraphraser capped at 125 words per attempt.",
+    "freeFeatures": [
+      "Standard & Fluency paraphrasing modes",
+      "Grammar checker & Citation generator",
+      "Summarizer up to 1,200 words"
+    ],
+    "paidFeatures": [
+      "Creative & Academic rewrite modes",
+      "Unlimited words paraphraser"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "notion-ai",
+    "name": "Notion AI",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\u26a0\ufe0f LIMITED FREE",
+    "mainUse": "Connected Workspace Assistant & Document Summarizer",
+    "bestFor": "Summarizing meeting notes, extracting action items & drafting inside Notion",
+    "officialUrl": "https://notion.so",
+    "apiUrl": "https://developers.notion.com",
+    "apiAvailable": true,
+    "limitations": "20 free complimentary AI responses per workspace member.",
+    "freeFeatures": [
+      "20 free trial AI queries",
+      "Q&A over workspace docs",
+      "Automated table property fills"
+    ],
+    "paidFeatures": [
+      "$8/member/mo unlimited Notion AI add-on"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "writesonic",
+    "name": "Writesonic",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "SEO Article Generator & Marketing Content Writer",
+    "bestFor": "Drafting long-form SEO blog posts, Google Ads copy & landing page copy",
+    "officialUrl": "https://writesonic.com",
+    "apiUrl": "https://docs.writesonic.com",
+    "apiAvailable": true,
+    "limitations": "10,000 free word credits upon initial sign-up.",
+    "freeFeatures": [
+      "10,000 free word credits",
+      "Chatsonic web research AI",
+      "100+ writing templates"
+    ],
+    "paidFeatures": [
+      "GPT-4o model quality tier",
+      "Brand voice voice-matching"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Go-To-Market Content & Sales Copy Automation",
+    "bestFor": "Social media post generation, email sequences & marketing copy",
+    "officialUrl": "https://copy.ai",
+    "apiUrl": "https://docs.copy.ai",
+    "apiAvailable": true,
+    "limitations": "2,000 free words per month limit.",
+    "freeFeatures": [
+      "2,000 words monthly in Chat",
+      "90+ copywriting templates",
+      "1 seat license"
+    ],
+    "paidFeatures": [
+      "Unlimited words",
+      "Workflow automations & brand voice assets"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "rytr",
+    "name": "Rytr",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Budget AI Writing Assistant for Short-Form Content",
+    "bestFor": "Writing email responses, catchy taglines, product descriptions & bio notes",
+    "officialUrl": "https://rytr.me",
+    "apiUrl": "https://rytr.me/developers",
+    "apiAvailable": true,
+    "limitations": "10,000 free characters per month.",
+    "freeFeatures": [
+      "10,000 monthly characters",
+      "40+ use cases & templates",
+      "Built-in plagiarism check (limited)"
+    ],
+    "paidFeatures": [
+      "Unlimited character generation",
+      "Custom tone creator"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "wordtune",
+    "name": "Wordtune",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Sentence Rewriter & Contextual Tone Shifter",
+    "bestFor": "Rephrasing sentences for clarity, conciseness or formal tone in Google Docs",
+    "officialUrl": "https://wordtune.com",
+    "apiUrl": "https://www.wordtune.com/api",
+    "apiAvailable": true,
+    "limitations": "10 free sentence rewrites per day.",
+    "freeFeatures": [
+      "10 daily rewrites",
+      "Casual & Formal tone shifts",
+      "Shorten & Expand controls"
+    ],
+    "paidFeatures": [
+      "Unlimited daily rewrites",
+      "Paragraph-level summarization"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper AI",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\u26a0\ufe0f LIMITED FREE",
+    "mainUse": "Enterprise Copywriter & Brand Voice Alignment",
+    "bestFor": "Multi-channel marketing campaigns maintaining strict brand guidelines",
+    "officialUrl": "https://jasper.ai",
+    "apiUrl": "https://developers.jasper.ai",
+    "apiAvailable": true,
+    "limitations": "7-day free trial requires credit card entry.",
+    "freeFeatures": [
+      "7-day full feature trial",
+      "Brand Voice style guide setup",
+      "SEO mode integration"
+    ],
+    "paidFeatures": [
+      "Team seats, custom workflow apps & company knowledge base"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": true,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "simplified",
+    "name": "Simplified",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "All-in-One Content App (Writer, Graphic, Video)",
+    "bestFor": "Solo social media creators managing graphics, copy & scheduled posts",
+    "officialUrl": "https://simplified.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "2,000 free AI writing words per month.",
+    "freeFeatures": [
+      "2,000 AI words per month",
+      "Social media scheduler (3 accounts)",
+      "Design templates"
+    ],
+    "paidFeatures": [
+      "Higher AI limits",
+      "Video editor Pro features & team seats"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma App",
+    "category": "AI WRITING & PRODUCTIVITY",
+    "catNum": 7,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Text-to-Presentation & Document Generator",
+    "bestFor": "Creating visual slide decks, web pages & docs in seconds from prompts",
+    "officialUrl": "https://gamma.app",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "400 free credits on sign-up; extra credits paid.",
+    "freeFeatures": [
+      "400 initial AI creation credits",
+      "Export to PDF or PPTX",
+      "Interactive card web embeds"
+    ],
+    "paidFeatures": [
+      "Custom fonts & branding",
+      "Unlimited AI generation credits"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "acrobat-ai",
+    "name": "Adobe Acrobat AI",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\u26a0\ufe0f LIMITED FREE",
+    "mainUse": "PDF Q&A & Document Executive Summarizer",
+    "bestFor": "Interactive document Q&A directly inside native Adobe Acrobat application",
+    "officialUrl": "https://adobe.com/acrobat",
+    "apiUrl": "https://developer.adobe.com/document-services",
+    "apiAvailable": true,
+    "limitations": "Free trial available; long-term usage requires Acrobat AI add-on plan.",
+    "freeFeatures": [
+      "Generative summary previews",
+      "Clickable page reference links",
+      "Form auto-fill"
+    ],
+    "paidFeatures": [
+      "Unlimited AI queries across large multi-file PDFs"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "pdfgear",
+    "name": "PDFgear",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Offline Free PDF Editor with Local AI Desktop Chat",
+    "bestFor": "Reading, editing & summarizing sensitive PDFs offline without cloud uploads",
+    "officialUrl": "https://pdfgear.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Desktop application dependent on local PC performance.",
+    "freeFeatures": [
+      "100% Free full PDF editor",
+      "Built-in Copilot PDF Q&A",
+      "No registration required"
+    ],
+    "paidFeatures": [
+      "100% Free app supported by corporate software suite"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "smallpdf-ai",
+    "name": "Smallpdf AI",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Web PDF Summarizer & Key Insight Extractor",
+    "bestFor": "Quick web-based document summaries and format conversions",
+    "officialUrl": "https://smallpdf.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "2 free document tasks per day limit.",
+    "freeFeatures": [
+      "AI Summary tool",
+      "PDF compression & conversion",
+      "Web browser interface"
+    ],
+    "paidFeatures": [
+      "Unlimited tasks",
+      "Desktop offline software access"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "chatpdf",
+    "name": "ChatPDF",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "ChatGPT Interface for PDF Documents",
+    "bestFor": "Students analyzing textbook chapters, scientific papers & manuals",
+    "officialUrl": "https://chatpdf.com",
+    "apiUrl": "https://www.chatpdf.com/docs/api",
+    "apiAvailable": true,
+    "limitations": "2 PDFs per day (up to 120 pages each) on free plan.",
+    "freeFeatures": [
+      "2 free PDFs per day (10MB max)",
+      "Multilingual document chat",
+      "Export chat history"
+    ],
+    "paidFeatures": [
+      "Unlimited PDFs & 2,000 pages per document processing"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "askyourpdf",
+    "name": "AskYourPDF",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Document Conversational Engine & Plugin",
+    "bestFor": "Extracting vector answers with precise page references from uploaded files",
+    "officialUrl": "https://askyourpdf.com",
+    "apiUrl": "https://docs.askyourpdf.com",
+    "apiAvailable": true,
+    "limitations": "1 document upload per day (100 pages max) on free tier.",
+    "freeFeatures": [
+      "1 daily document upload",
+      "ChatGPT plugin integration",
+      "Chrome browser extension Q&A"
+    ],
+    "paidFeatures": [
+      "Unlimited uploads & 2,500 pages per document"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "llamaparse",
+    "name": "LlamaParse",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "GenAI PDF Parsing & Complex Table Extraction API",
+    "bestFor": "Parsing dense embedded tables & diagrams into Markdown for RAG pipelines",
+    "officialUrl": "https://cloud.llamaindex.ai",
+    "apiUrl": "https://docs.llamaindex.ai/en/stable/llama_cloud/llama_parse/",
+    "apiAvailable": true,
+    "limitations": "1,000 free pages parsed per day.",
+    "freeFeatures": [
+      "1,000 free parsed pages daily",
+      "Markdown & JSON output formatting",
+      "LlamaIndex framework integration"
+    ],
+    "paidFeatures": [
+      "Enterprise volume parsing ($0.003/page after 1k)"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "chatdoc",
+    "name": "ChatDOC",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Table-Aware AI Document Reader with Citations",
+    "bestFor": "Analyzing complex financial balance sheets, legal contracts & data tables",
+    "officialUrl": "https://chatdoc.com",
+    "apiUrl": "https://chatdoc.com/developer",
+    "apiAvailable": true,
+    "limitations": "2 documents per day (up to 20 pages each) on free plan.",
+    "freeFeatures": [
+      "Recognize tables & formulas precisely",
+      "Direct text box selection Q&A",
+      "Source snippet verification"
+    ],
+    "paidFeatures": [
+      "Up to 300 pages per file",
+      "Multi-file batch chat"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "julius-ai",
+    "name": "Julius AI",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "AI Data Scientist for CSV, Excel & Python Charting",
+    "bestFor": "Plotting graphs, running statistical regressions & cleaning spreadsheet data",
+    "officialUrl": "https://julius.ai",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "15 free messages/queries per month.",
+    "freeFeatures": [
+      "Execute Python code over uploaded CSV/Excel",
+      "Generate downloadable Matplotlib/Seaborn charts",
+      "Data cleaning"
+    ],
+    "paidFeatures": [
+      "250+ messages monthly",
+      "Advanced machine learning modeling"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "datalab",
+    "name": "DataLab by DataCamp",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Cloud AI Python Notebook for Data Analysis",
+    "bestFor": "Writing Pandas, Matplotlib & SQL code via natural language prompts",
+    "officialUrl": "https://datacamp.com/datalab",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Limited monthly cloud compute runtime hours.",
+    "freeFeatures": [
+      "AI code generator & error fixer",
+      "Hosted Jupyter environment",
+      "Pre-installed data science packages"
+    ],
+    "paidFeatures": [
+      "GPU acceleration & unlimited runtime"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "rows-ai",
+    "name": "Rows AI",
+    "category": "AI PDF, DOCUMENT & DATA TOOLS",
+    "catNum": 8,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "AI Spreadsheet with Built-in Web Q&A & Enrichment",
+    "bestFor": "Automating lead enrichment, summary formulas & web data extraction in spreadsheets",
+    "officialUrl": "https://rows.com",
+    "apiUrl": "https://rows.com/docs/api",
+    "apiAvailable": true,
+    "limitations": "50 free AI integration calls per month.",
+    "freeFeatures": [
+      "Ask AI helper for formulas & charts",
+      "Web scraping functions",
+      "OpenAI integration inside cells"
+    ],
+    "paidFeatures": [
+      "Unlimited AI executions",
+      "Custom workspace permissions"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "zapier-ai",
+    "name": "Zapier AI",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "No-Code Workflow Automation with AI Actions",
+    "bestFor": "Connecting 7,000+ web applications using natural language automation builder",
+    "officialUrl": "https://zapier.com",
+    "apiUrl": "https://platform.zapier.com",
+    "apiAvailable": true,
+    "limitations": "100 free task executions per month.",
+    "freeFeatures": [
+      "100 tasks monthly",
+      "Single-step Zaps",
+      "AI Zap builder prompt helper"
+    ],
+    "paidFeatures": [
+      "Multi-step Zaps",
+      "Webhooks & high-frequency polling"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "make",
+    "name": "Make",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Visual Drag-and-Drop API Automation Canvas",
+    "bestFor": "Building complex multi-branch API workflows with native OpenAI/Anthropic nodes",
+    "officialUrl": "https://make.com",
+    "apiUrl": "https://www.make.com/en/api-documentation",
+    "apiAvailable": true,
+    "limitations": "1,000 free operation credits per month.",
+    "freeFeatures": [
+      "1,000 free operations monthly",
+      "Visual scenario builder",
+      "10,000+ pre-built app modules"
+    ],
+    "paidFeatures": [
+      "10,000+ operations",
+      "Minutely scheduling & data routing"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "n8n",
+    "name": "n8n",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Self-Hosted Workflow Automation Platform with AI Nodes",
+    "bestFor": "Building private automation pipelines with LangChain & custom vector store nodes",
+    "officialUrl": "https://n8n.io",
+    "apiUrl": "https://docs.n8n.io/api/",
+    "apiAvailable": true,
+    "limitations": "Self-hosted Community Edition 100% free; Cloud hosted tier is paid.",
+    "freeFeatures": [
+      "100% Free self-hosted software",
+      "Native AI Agent & Memory nodes",
+      "Unlimited workflow executions"
+    ],
+    "paidFeatures": [
+      "n8n Cloud hosted managed service"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "pipedream",
+    "name": "Pipedream",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Developer Integration Platform with JS/Python Execution",
+    "bestFor": "Event-driven API automations using serverless Python/Node.js code steps",
+    "officialUrl": "https://pipedream.com",
+    "apiUrl": "https://pipedream.com/docs/api",
+    "apiAvailable": true,
+    "limitations": "100 free invocations per day limit.",
+    "freeFeatures": [
+      "100 daily invocations",
+      "Connect 1,000+ APIs with managed OAuth",
+      "Custom Python/Node.js steps"
+    ],
+    "paidFeatures": [
+      "High throughput concurrency & custom domains"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "ifttt",
+    "name": "IFTTT",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Simple Applet Automation for Smart Devices & Socials",
+    "bestFor": "Personal smart home automation & basic social media cross-posting",
+    "officialUrl": "https://ifttt.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "2 custom applets on free plan.",
+    "freeFeatures": [
+      "2 custom applets",
+      "Explore 1,000+ public applets",
+      "Mobile notifications"
+    ],
+    "paidFeatures": [
+      "20+ applets",
+      "Multi-action applets & fast execution"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "crewai",
+    "name": "CrewAI",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Python Multi-Agent Role-Playing Framework",
+    "bestFor": "Orchestrating autonomous AI teams (Researchers, Writers, Coders) to solve tasks",
+    "officialUrl": "https://crewai.com",
+    "apiUrl": "https://docs.crewai.com",
+    "apiAvailable": true,
+    "limitations": "Software 100% free; underlying LLM API calls incur user costs.",
+    "freeFeatures": [
+      "100% Free open-source Python library",
+      "Role-based agent definitions",
+      "Sequential & hierarchical task execution"
+    ],
+    "paidFeatures": [
+      "CrewAI Enterprise Cloud management dashboard"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "dify",
+    "name": "Dify.ai",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "LLM Application Development & RAG Agent Orchestrator",
+    "bestFor": "Drag-and-drop agentic workflow building, prompt management & RAG deployment",
+    "officialUrl": "https://dify.ai",
+    "apiUrl": "https://docs.dify.ai",
+    "apiAvailable": true,
+    "limitations": "Self-hosted Community Edition 100% free; Cloud tier has free quotas.",
+    "freeFeatures": [
+      "Visual RAG & Agent orchestrator",
+      "Open-source Docker deployment",
+      "Built-in API endpoint generator"
+    ],
+    "paidFeatures": [
+      "Dify Cloud Pro team features"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "flowise",
+    "name": "Flowise AI",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Drag-and-Drop Node UI for LangChain & LlamaIndex",
+    "bestFor": "Rapid visual prototyping of RAG pipelines, chatbots & AI agent graphs",
+    "officialUrl": "https://flowiseai.com",
+    "apiUrl": "https://docs.flowiseai.com",
+    "apiAvailable": true,
+    "limitations": "Software is 100% free; self-hosted server compute hardware costs apply.",
+    "freeFeatures": [
+      "100% Free open-source Node.js app",
+      "Interactive test canvas",
+      "Embed chatbots via iframe/script"
+    ],
+    "paidFeatures": [
+      "Flowise Cloud managed hosting"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "langflow",
+    "name": "Langflow",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Python Visual Builder for Multi-Agent AI Applications",
+    "bestFor": "Visualizing Python LangChain code flows, multi-agent graphs & API endpoints",
+    "officialUrl": "https://langflow.org",
+    "apiUrl": "https://docs.langflow.org",
+    "apiAvailable": true,
+    "limitations": "100% free open source; requires local Python installation.",
+    "freeFeatures": [
+      "100% Free open source tool",
+      "Visual Python agent graph canvas",
+      "Export flow as Python code or API"
+    ],
+    "paidFeatures": [
+      "DataStax Astra cloud managed hosting"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "autogen",
+    "name": "AutoGen by Microsoft",
+    "category": "AI AUTOMATION & AGENTS",
+    "catNum": 9,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Multi-Agent Conversation Framework by Microsoft Research",
+    "bestFor": "Building complex multi-agent conversations where agents debug code & execute tools",
+    "officialUrl": "https://microsoft.github.io/autogen",
+    "apiUrl": "https://microsoft.github.io/autogen/docs/Getting-Started",
+    "apiAvailable": true,
+    "limitations": "Open source software; requires user API keys for model execution.",
+    "freeFeatures": [
+      "100% Free open-source Python framework",
+      "Code execution sandbox support",
+      "Human-in-the-loop interjection"
+    ],
+    "paidFeatures": [
+      "Software 100% free open source project"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Open AI Model Hub, Dataset Repository & Spaces Host",
+    "bestFor": "Downloading open-weights LLMs, datasets & hosting demo apps on Spaces",
+    "officialUrl": "https://huggingface.co",
+    "apiUrl": "https://huggingface.co/docs/api-inference",
+    "apiAvailable": true,
+    "limitations": "Free CPU Spaces available; dedicated GPU Spaces billed per hour.",
+    "freeFeatures": [
+      "Unlimited open model & dataset downloads",
+      "Free CPU Spaces hosting",
+      "Free Inference API tier"
+    ],
+    "paidFeatures": [
+      "Pro subscriber account badge",
+      "Dedicated Enterprise GPU endpoints"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "google-colab",
+    "name": "Google Colab",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "In-Browser Jupyter Notebooks with Free T4 GPU",
+    "bestFor": "Running ML Python code, fine-tuning small LLMs & data science research",
+    "officialUrl": "https://colab.google.com",
+    "apiUrl": "",
+    "apiAvailable": false,
+    "limitations": "Session timeouts on long execution runs; free GPU allocation subject to availability.",
+    "freeFeatures": [
+      "Free NVIDIA T4 GPU allocation",
+      "Pre-installed PyTorch & TensorFlow",
+      "Direct Google Drive sync"
+    ],
+    "paidFeatures": [
+      "Colab Pro ($10/mo) for A100/V100 GPUs & background execution"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "kaggle",
+    "name": "Kaggle",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Data Science Competitions, Datasets & Free GPU Compute",
+    "bestFor": "30 hours/week of free NVIDIA P100/T4 GPU notebook execution time",
+    "officialUrl": "https://kaggle.com",
+    "apiUrl": "https://github.com/Kaggle/kaggle-api",
+    "apiAvailable": true,
+    "limitations": "Execution session timeout cap of 12 hours.",
+    "freeFeatures": [
+      "30 weekly free GPU hours",
+      "Access to 300,000+ public datasets",
+      "Free ML competition entry"
+    ],
+    "paidFeatures": [
+      "100% Free platform owned by Google"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Local Open LLM Runner (Llama 3, DeepSeek, Mistral)",
+    "bestFor": "100% offline, zero API cost private LLM inference on Mac/Windows/Linux",
+    "officialUrl": "https://ollama.com",
+    "apiUrl": "http://localhost:11434/docs",
+    "apiAvailable": true,
+    "limitations": "Software 100% free; performance strictly depends on local RAM/VRAM hardware.",
+    "freeFeatures": [
+      "100% Free open source tool",
+      "One-command model runner (`ollama run llama3`)",
+      "Local OpenAI-compatible REST API"
+    ],
+    "paidFeatures": [
+      "Software 100% free open source project"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "lm-studio",
+    "name": "LM Studio",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udfe2 FREE",
+    "mainUse": "Desktop GUI to Discover & Run Local GGUF LLMs",
+    "bestFor": "User-friendly local model testing with OpenAI-compatible local server",
+    "officialUrl": "https://lmstudio.ai",
+    "apiUrl": "http://localhost:1234/v1",
+    "apiAvailable": true,
+    "limitations": "Desktop application free for personal use; local hardware specs apply.",
+    "freeFeatures": [
+      "Search and download Hugging Face GGUF models",
+      "In-app chat playground",
+      "Local HTTP server server endpoint"
+    ],
+    "paidFeatures": [
+      "Enterprise commercial licensing tier"
+    ],
+    "localInstallation": true,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "replicate",
+    "name": "Replicate",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Cloud API for Running Open-Source Models via Code",
+    "bestFor": "Running Stable Diffusion, Flux & open LLM inference in production with one line of code",
+    "officialUrl": "https://replicate.com",
+    "apiUrl": "https://replicate.com/docs/reference/http",
+    "apiAvailable": true,
+    "limitations": "Small initial free credit balance; pay-per-second GPU execution after.",
+    "freeFeatures": [
+      "Trial free execution credits",
+      "Python & Node.js client SDKs",
+      "Web demo playground"
+    ],
+    "paidFeatures": [
+      "Pay-per-second cloud GPU billing"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "groq",
+    "name": "Groq",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Ultra-Fast LPU Inference for Open-Source Models",
+    "bestFor": "500+ tokens/sec LLM response speeds for real-time voice & chat apps",
+    "officialUrl": "https://groq.com",
+    "apiUrl": "https://console.groq.com/docs/quickstart",
+    "apiAvailable": true,
+    "limitations": "Free Cloud API rate-limited by Requests/Tokens per Minute quotas.",
+    "freeFeatures": [
+      "Free Developer API tier (GroqCloud)",
+      "Llama 3.3 70B & DeepSeek R1 access",
+      "Sub-200ms latency"
+    ],
+    "paidFeatures": [
+      "Enterprise reserved LPU capacity"
+    ],
+    "localInstallation": false,
+    "openSource": false,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "together-ai",
+    "name": "Together AI",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udfe1 FREE CREDITS",
+    "mainUse": "Fast Cloud API Inference & Fine-Tuning Engine",
+    "bestFor": "High-throughput API endpoints for open models (Llama, Qwen, DeepSeek)",
+    "officialUrl": "https://together.ai",
+    "apiUrl": "https://docs.together.ai",
+    "apiAvailable": true,
+    "limitations": "$5 non-replenishing initial free credit on registration.",
+    "freeFeatures": [
+      "$5 free initial trial API credits",
+      "Access to 100+ open-source AI models",
+      "OpenAI API compatibility"
+    ],
+    "paidFeatures": [
+      "Pay-per-million token billing"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udd35 FREE TIER",
+    "mainUse": "Unified API Gateway to 100+ Commercial & Open LLMs",
+    "bestFor": "Routing requests dynamically across OpenAI, Anthropic, Gemini & open models with zero lock-in",
+    "officialUrl": "https://openrouter.ai",
+    "apiUrl": "https://openrouter.ai/docs",
+    "apiAvailable": true,
+    "limitations": "Offers several 100% free models; paid models require deposited credits.",
+    "freeFeatures": [
+      "Multiple 100% free open model endpoints",
+      "Unified API key",
+      "Detailed per-prompt latency metrics"
+    ],
+    "paidFeatures": [
+      "Pay-as-you-go credit balance for commercial models"
+    ],
+    "localInstallation": false,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  },
+  {
+    "id": "pytorch",
+    "name": "PyTorch",
+    "category": "AI DEVELOPER / ML / OPEN-SOURCE",
+    "catNum": 10,
+    "freeStatus": "\ud83d\udfe3 OPEN SOURCE",
+    "mainUse": "Open-Source Deep Learning Framework by Meta AI",
+    "bestFor": "Building, training & deploying custom Generative AI neural network models",
+    "officialUrl": "https://pytorch.org",
+    "apiUrl": "https://pytorch.org/docs/stable/index.html",
+    "apiAvailable": true,
+    "limitations": "100% free open source library; hardware/cloud compute costs depend on user setup.",
+    "freeFeatures": [
+      "100% Free open-source Python library",
+      "TorchScript & CUDA GPU acceleration",
+      "Vast ecosystem of pre-trained models"
+    ],
+    "paidFeatures": [
+      "Software 100% free open source framework"
+    ],
+    "localInstallation": true,
+    "openSource": true,
+    "creditCardRequired": false,
+    "lastVerified": "September 2026"
+  }
+];
+    window.CURRICULUM_DATA = [
+  {
+    "id": "01-fundamentals",
+    "number": "01",
+    "title": "Generative AI Fundamentals",
+    "subtitle": "Core concepts, evolution, traditional vs generative AI, and foundation models",
+    "simple": {
+      "definition": "Generative AI is a branch of Artificial Intelligence that creates new content\u2014such as human-like text, images, music, video, and code\u2014by learning patterns from massive training datasets.",
+      "howItWorks": "Imagine a master painter who has studied 10 million classic artworks. Instead of making exact copies, the painter learns style, color harmony, and brush strokes to paint an entirely original masterpiece when given a prompt.",
+      "example": "Prompt: 'Write a poem about a sunrise in the Himalayas.' -> Output: A newly composed 4-stanza poem.",
+      "realWorldApp": "Writing draft emails, generating synthetic medical images for research, coding helpers (GitHub Copilot), and automated customer support.",
+      "advantages": [
+        "Drastically speeds up content creation",
+        "Provides personalized learning and tutoring",
+        "Automates repetitive coding and drafting tasks"
+      ],
+      "limitations": [
+        "Can produce incorrect or fabricated answers (Hallucination)",
+        "Requires high computational resources",
+        "Risk of bias and copyright issues"
+      ],
+      "interviewQ": "Q: How does Generative AI differ from Traditional Predictive AI?\nA: Predictive AI analyzes existing data to make classifications or predictions (e.g., Spam vs Not Spam), whereas Generative AI generates entirely new data samples matching the underlying distribution of its training data.",
+      "exercise": "Try prompting ChatGPT or Gemini with: 'Explain quantum computing to a 10-year-old using a pizza analogy.' Observe how it adapts tone."
+    },
+    "technical": {
+      "definition": "Generative AI models estimate the joint probability distribution P(X) or conditional distribution P(X|Y) over high-dimensional input spaces X, enabling sampling of new probabilistic instances.",
+      "architecture": "Generative Frameworks:\n1. Autoregressive LLMs (Transformer Decoders): P(X) = \u220f P(x_i | x_1,...,x_{i-1})\n2. Latent Diffusion Models: Reverse Denoising SDEs in latent feature space\n3. Variational Autoencoders (VAEs): Maximizing Evidence Lower Bound (ELBO)\n4. Generative Adversarial Networks (GANs): Minimax game between Generator G and Discriminator D",
+      "codeExample": "# Autoregressive Next-Token Sampling Concept in Python\nimport torch\nimport torch.nn.functional as F\n\ndef sample_next_token(logits, temperature=0.7, top_k=50):\n    scaled_logits = logits / temperature\n    top_k_logits, top_k_indices = torch.topk(scaled_logits, top_k)\n    probs = F.softmax(top_k_logits, dim=-1)\n    next_token_idx = torch.multinomial(probs, num_samples=1)\n    return top_k_indices[next_token_idx]\n",
+      "deepDive": "Discriminative vs Generative:\n\u2022 Discriminative: Learns P(Y|X) - decision boundary between classes Y given input X.\n\u2022 Generative: Learns P(X,Y) or P(X) - probabilistic data distribution, allowing generation via Monte Carlo or Langevin sampling."
+    }
+  },
+  {
+    "id": "02-foundations",
+    "number": "02",
+    "title": "AI & ML Foundations",
+    "subtitle": "Neural networks, gradient descent, loss functions, overfitting, and optimization",
+    "simple": {
+      "definition": "Machine Learning (ML) allows computers to learn patterns from data automatically without being explicitly programmed step-by-step.",
+      "howItWorks": "Neural networks are inspired by biological brain neurons. They take inputs, pass them through weighted connections, and adjust internal knobs (weights) whenever they make a mistake until accuracy improves.",
+      "example": "Feeding 50,000 house images with prices into a neural net so it learns to estimate prices of new houses.",
+      "realWorldApp": "Credit scoring, spam filtering, image recognition, price prediction, recommendation engines.",
+      "advantages": [
+        "Handles complex non-linear patterns",
+        "Scales with massive data",
+        "Adapts to new unseen inputs"
+      ],
+      "limitations": [
+        "Requires substantial labeled data",
+        "Black-box nature makes debugging difficult"
+      ],
+      "interviewQ": "Q: What is Overfitting and how do you prevent it?\nA: Overfitting happens when a model memorizes training data including noise. Prevent it using Dropout, Regularization (L1/L2), Early Stopping, and Data Augmentation.",
+      "exercise": "Draw a simple 3-layer Artificial Neural Network (Input Layer -> Hidden Layer -> Output Layer) on paper."
+    },
+    "technical": {
+      "definition": "Supervised & Unsupervised Learning form the bedrock. Optimization relies on Stochastic Gradient Descent (SGD), AdamW, and backpropagation via computational graph autograd.",
+      "architecture": "Loss Functions:\n\u2022 Cross-Entropy Loss: L = -\u2211 y_i log(p_i)\n\u2022 Mean Squared Error (MSE): L = (1/N) \u2211 (y_i - y\u0302_i)^2\nOptimization:\n\u2022 Weight Update: w_{t+1} = w_t - \u03b7 \u2207_w L(w_t)",
+      "codeExample": "# Backpropagation & Weight Update using PyTorch\nimport torch\n\nx = torch.tensor([2.0, 3.0], requires_grad=True)\ny_target = torch.tensor([10.0])\n\ny_pred = x[0] * 2 + x[1] * 3\nloss = (y_target - y_pred) ** 2\nloss.backward()\nprint(f'Gradients w.r.t x: {x.grad}')\n",
+      "deepDive": "Modern GenAI optimization uses AdamW (Adaptive Moment Estimation with Decoupled Weight Decay) to handle sparse gradients across billions of parameters."
+    }
+  },
+  {
+    "id": "03-evolution",
+    "number": "03",
+    "title": "Evolution of GenAI",
+    "subtitle": "From Rule-based AI to RNNs, LSTMs, GANs, VAEs, Transformers, and modern Foundation Models",
+    "simple": {
+      "definition": "The history of Generative AI evolved from rigid rule-based systems in the 1980s to deep learning networks in the 2010s, culminating in the 2017 Transformer breakthrough.",
+      "howItWorks": "Early AI followed 'if-then' rules. Next came Recurrent Neural Networks (RNNs) that read word-by-word but forgot early text. Later, GANs created fake images by competing against a discriminator. Finally, Transformers allowed AI to process entire books simultaneously.",
+      "example": "Comparing 2014 GAN pixelated face generation vs 2026 Midjourney v6 / Flux photorealistic portrait generation.",
+      "realWorldApp": "Automated code conversion, high-resolution video restoration, real-time voice translation.",
+      "advantages": [
+        "Exponential increase in model capacity",
+        "Zero-shot and few-shot learning capabilities"
+      ],
+      "limitations": [
+        "Exponential increase in training compute costs",
+        "Energy consumption during training"
+      ],
+      "interviewQ": "Q: Why did Transformers replace RNNs and LSTMs?\nA: RNNs processed text sequentially, leading to vanishing gradients and long training times. Transformers use Self-Attention to process all tokens in parallel, enabling training on internet-scale datasets.",
+      "exercise": "List the major milestone years: 2014 (GANs), 2017 (Transformers), 2020 (GPT-3), 2022 (ChatGPT), 2024 (Multimodal 1.5), 2026 (Reasoning Agents & MCP)."
+    },
+    "technical": {
+      "definition": "Architectural shift from Recurrent O(T) sequential processing to Parallel Attention O(T^2) mechanism, overcoming vanishing gradients in long sequences.",
+      "architecture": "Evolutionary Milestones:\n1. RNN/LSTM (1997-2014): Hidden state recurrence h_t = tanh(W x_t + U h_{t-1})\n2. GANs (Goodfellow et al., 2014): min_G max_D V(D,G)\n3. Transformer (Vaswani et al., 2017): Multi-Head Attention Attention(Q,K,V) = softmax(QK^T / \u221ad_k) V",
+      "codeExample": "# Evolution comparison: RNN Cell vs Scaled Dot-Product Attention\nimport torch\nimport math\n\ndef scaled_dot_product_attention(Q, K, V):\n    d_k = Q.size(-1)\n    scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(d_k)\n    attn_weights = torch.softmax(scores, dim=-1)\n    return torch.matmul(attn_weights, V)\n",
+      "deepDive": "Self-attention matrix calculation allows token pairs at arbitrary distances to compute direct interaction weights without passing through intermediate recurrent hidden states."
+    }
+  }
+];
 
-    <script src="js/tools-directory.js"></script>
-    <script src="js/diagrams.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/playground.js"></script>
-    <script src="js/quiz-engine.js"></script>
-    <script src="js/app.js"></script>
+    // Tools Directory Controller Engine
+    window.ToolsDirectory = {
+        selectedCategory: 'all',
+        selectedStatusBadge: 'all',
+        selectedCompareIds: [],
+
+        init() {
+            this.renderToolsGrid();
+        },
+
+        renderToolsGrid() {
+            const gridEl = document.getElementById('toolsGrid');
+            if (!gridEl) return;
+
+            let filtered = window.AI_TOOLS_DATA;
+            if (this.selectedCategory !== 'all') {
+                filtered = filtered.filter(t => t.catNum == this.selectedCategory || t.category === this.selectedCategory);
+            }
+            if (this.selectedStatusBadge !== 'all') {
+                filtered = filtered.filter(t => t.freeStatus.includes(this.selectedStatusBadge));
+            }
+
+            gridEl.innerHTML = filtered.map(t => this.createToolCardHTML(t)).join('');
+        },
+
+        createToolCardHTML(tool) {
+            const badgeClass = tool.freeStatus.includes('FREE TIER') ? 'badge-freetier' :
+                               tool.freeStatus.includes('FREE CREDITS') ? 'badge-freecredits' :
+                               tool.freeStatus.includes('OPEN SOURCE') ? 'badge-opensource' :
+                               tool.freeStatus.includes('LIMITED') ? 'badge-limitedfree' : 'badge-free';
+
+            const isChecked = this.selectedCompareIds.includes(tool.id) ? 'checked' : '';
+
+            return `
+            <div class="tool-card">
+                <div>
+                    <div class="tool-card-cat">CAT 0${tool.catNum} — ${tool.category}</div>
+                    <div class="tool-card-header">
+                        <div class="tool-card-title">${tool.name}</div>
+                        <span class="badge ${badgeClass}">${tool.freeStatus}</span>
+                    </div>
+                    <div class="tool-card-body">
+                        <p><strong>Main Use:</strong> ${tool.mainUse}</p>
+                        <p style="margin-top:4px;"><strong>Best For:</strong> ${tool.bestFor}</p>
+                        
+                        <ul class="feature-list">
+                            ${tool.freeFeatures.map(f => `<li>${f}</li>`).join('')}
+                        </ul>
+
+                        <div class="limitations-box">
+                            <strong>⚠️ Free Limits:</strong> ${tool.limitations}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-card-actions">
+                    <a href="${tool.officialUrl}" target="_blank" class="btn btn-primary">🌐 Website</a>
+                    <button class="btn btn-secondary" onclick="window.ToolsDirectory.showDetails('${tool.id}')">📄 Specs</button>
+                    <label style="font-size:0.75rem; display:inline-flex; align-items:center; gap:4px; margin-left:auto; cursor:pointer;">
+                        <input type="checkbox" ${isChecked} onchange="window.ToolsDirectory.toggleCompare('${tool.id}')"> Compare
+                    </label>
+                </div>
+            </div>
+            `;
+        },
+
+        filterCategory(catNum) {
+            this.selectedCategory = catNum;
+            document.querySelectorAll('.cat-pill').forEach(el => el.classList.remove('active'));
+            const activePill = document.getElementById('catPill_' + catNum);
+            if (activePill) activePill.classList.add('active');
+            this.renderToolsGrid();
+        },
+
+        showDetails(id) {
+            const tool = window.AI_TOOLS_DATA.find(t => t.id === id);
+            if (!tool) return;
+            const body = document.getElementById('toolDetailsBody');
+            body.innerHTML = `
+                <h2 style="color:var(--brand-primary);">${tool.name}</h2>
+                <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:16px;">Category: ${tool.category} • Last Verified: ${tool.lastVerified}</p>
+                <p><strong>Main Purpose:</strong> ${tool.mainUse}</p>
+                <p style="margin-top:8px;"><strong>Ideal Audience:</strong> ${tool.bestFor}</p>
+                
+                <h4 style="margin-top:16px; color:var(--brand-primary);">Free Access Features</h4>
+                <ul>${tool.freeFeatures.map(f => `<li>${f}</li>`).join('')}</ul>
+                
+                <h4 style="margin-top:16px; color:var(--brand-primary);">Paid Plan Features</h4>
+                <ul>${tool.paidFeatures.map(f => `<li>${f}</li>`).join('')}</ul>
+                
+                <h4 style="margin-top:16px; color:var(--brand-gold);">Exact Free Tier Limitations</h4>
+                <p style="background:var(--bg-tertiary); padding:10px; border-radius:6px;">${tool.limitations}</p>
+                
+                <div style="margin-top:20px; display:flex; gap:10px;">
+                    <a href="${tool.officialUrl}" target="_blank" class="btn btn-primary">Visit Official Site</a>
+                    ${tool.apiAvailable ? `<a href="${tool.apiUrl}" target="_blank" class="btn btn-secondary">API Developer Console</a>` : ''}
+                </div>
+            `;
+            document.getElementById('toolDetailsModal').classList.add('open');
+        },
+        closeDetails() { document.getElementById('toolDetailsModal').classList.remove('open'); },
+
+        toggleCompare(id) {
+            if (this.selectedCompareIds.includes(id)) {
+                this.selectedCompareIds = this.selectedCompareIds.filter(i => i !== id);
+            } else {
+                if (this.selectedCompareIds.length >= 4) {
+                    alert('You can select up to 4 tools to compare side-by-side.');
+                    return;
+                }
+                this.selectedCompareIds.push(id);
+            }
+        },
+
+        openCompareModal() {
+            if (this.selectedCompareIds.length === 0) {
+                alert('Please select at least 1 tool using the "Compare" checkbox on tool cards.');
+                return;
+            }
+            const selectedTools = window.AI_TOOLS_DATA.filter(t => this.selectedCompareIds.includes(t.id));
+            const body = document.getElementById('toolCompareBody');
+            body.innerHTML = `
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>Feature / Tool</th>
+                        ${selectedTools.map(t => `<th>${t.name}</th>`).join('')}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Access Badge</strong></td>
+                        ${selectedTools.map(t => `<td>${t.freeStatus}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td><strong>Category</strong></td>
+                        ${selectedTools.map(t => `<td>${t.category}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td><strong>Best For</strong></td>
+                        ${selectedTools.map(t => `<td>${t.bestFor}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td><strong>API Available?</strong></td>
+                        ${selectedTools.map(t => `<td>${t.apiAvailable ? '✅ Yes' : '❌ No'}</td>`).join('')}
+                    </tr>
+                    <tr>
+                        <td><strong>Free Limitations</strong></td>
+                        ${selectedTools.map(t => `<td>${t.limitations}</td>`).join('')}
+                    </tr>
+                </tbody>
+            </table>
+            `;
+            document.getElementById('toolCompareModal').classList.add('open');
+        },
+        closeCompareModal() { document.getElementById('toolCompareModal').classList.remove('open'); },
+
+        openRecommendationModal() { document.getElementById('recWizardModal').classList.add('open'); },
+        closeRecommendationModal() { document.getElementById('recWizardModal').classList.remove('open'); },
+        runRecommendationWizard() {
+            const goal = document.getElementById('wizGoal').value;
+            let recs = [];
+            if (goal === 'code') recs = window.AI_TOOLS_DATA.filter(t => t.category.includes('CODING'));
+            else if (goal === 'research') recs = window.AI_TOOLS_DATA.filter(t => t.category.includes('RESEARCH'));
+            else if (goal === 'image') recs = window.AI_TOOLS_DATA.filter(t => t.category.includes('IMAGE'));
+            else recs = window.AI_TOOLS_DATA.filter(t => t.category.includes('PDF'));
+
+            document.getElementById('recResultsContainer').innerHTML = `
+                <h4>Recommended Tools for You:</h4>
+                <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
+                    ${recs.slice(0, 3).map(r => `<div style="padding:10px; background:var(--bg-tertiary); border-radius:6px;"><strong>${r.name}</strong> (${r.freeStatus})<br><span style="font-size:0.8rem;">${r.bestFor}</span></div>`).join('')}
+                </div>
+            `;
+        }
+    };
+
+    // Global Search Engine
+    window.SearchEngine = {
+        openModal() { document.getElementById('searchModal').classList.add('open'); document.getElementById('searchInput').focus(); },
+        closeModal() { document.getElementById('searchModal').classList.remove('open'); }
+    };
+
+    // Main App Navigation Controller
+    window.App = {
+        currentView: 'tools',
+        activeMode: 'simple',
+
+        init() {
+            this.renderSidebar();
+            this.navigateTo('tools');
+
+            // Keyboard shortcut Ctrl+K
+            window.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    window.SearchEngine.openModal();
+                }
+            });
+        },
+
+        renderSidebar() {
+            const navEl = document.getElementById('sidebarNavList');
+            navEl.innerHTML = window.CURRICULUM_DATA.map(c => `
+                <li class="sidebar-nav-item">
+                    <a href="javascript:void(0);" onclick="window.App.navigateTo('chapter', '${c.id}')">
+                        <span class="chapter-num">${c.number}</span>
+                        <span>${c.title}</span>
+                    </a>
+                </li>
+            `).join('');
+        },
+
+        navigateTo(view, param = null) {
+            const stage = document.getElementById('mainContentStage');
+            if (view === 'tools') {
+                stage.innerHTML = `
+                <div class="tools-header-banner">
+                    <h1>🛠️ 100 AI Tools Directory — Free & Honest Access Guide</h1>
+                    <p>Explore 100 verified AI tools across 10 structured categories. Every tool features verified free-access status labels updated for <strong>September 2026</strong> under SachiTech Director Sachin Thete.</p>
+                </div>
+
+                <div class="tools-filter-bar">
+                    <div class="cat-pills-container">
+                        <div id="catPill_all" class="cat-pill active" onclick="window.ToolsDirectory.filterCategory('all')">All (100)</div>
+                        <div id="catPill_1" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('1')">1. Chat (10)</div>
+                        <div id="catPill_2" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('2')">2. Research (10)</div>
+                        <div id="catPill_3" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('3')">3. Image (10)</div>
+                        <div id="catPill_4" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('4')">4. Video (10)</div>
+                        <div id="catPill_5" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('5')">5. Audio (10)</div>
+                        <div id="catPill_6" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('6')">6. Coding (10)</div>
+                        <div id="catPill_7" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('7')">7. Writing (10)</div>
+                        <div id="catPill_8" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('8')">8. PDF/Data (10)</div>
+                        <div id="catPill_9" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('9')">9. Agents (10)</div>
+                        <div id="catPill_10" class="cat-pill" onclick="window.ToolsDirectory.filterCategory('10')">10. Dev/ML (10)</div>
+                    </div>
+
+                    <div style="display:flex; gap:8px;">
+                        <button class="btn btn-secondary" onclick="window.ToolsDirectory.openRecommendationModal()">⚡ Finder Wizard</button>
+                        <button class="btn btn-primary" onclick="window.ToolsDirectory.openCompareModal()">📊 Compare Selected</button>
+                    </div>
+                </div>
+
+                <div id="toolsGrid" class="tools-grid"></div>
+                `;
+                window.ToolsDirectory.init();
+            } else if (view === 'chapter') {
+                const chapter = window.CURRICULUM_DATA.find(c => c.id === param);
+                if (!chapter) return;
+                stage.innerHTML = `
+                <div style="background:var(--bg-secondary); padding:28px; border-radius:12px; border:1px solid var(--border-color);">
+                    <span style="color:var(--brand-accent); font-weight:700;">MODULE ${chapter.number}</span>
+                    <h1 style="color:var(--brand-primary); margin:6px 0;">${chapter.title}</h1>
+                    <p style="color:var(--text-muted); font-size:1.05rem;">${chapter.subtitle}</p>
+                    
+                    <div style="margin:20px 0; display:flex; gap:10px;">
+                        <button class="btn btn-primary" onclick="window.App.switchChapterMode('simple')">🎓 Student Mode</button>
+                        <button class="btn btn-secondary" onclick="window.App.switchChapterMode('technical')">💻 Developer Mode</button>
+                    </div>
+
+                    <div id="chapterContentArea" style="margin-top:20px; font-size:0.95rem; line-height:1.7;">
+                        <h3>Definition</h3>
+                        <p style="margin-bottom:16px;">${chapter.simple.definition}</p>
+                        
+                        <h3>How it Works (Analogy)</h3>
+                        <p style="margin-bottom:16px;">${chapter.simple.howItWorks}</p>
+                        
+                        <h3>Example</h3>
+                        <p style="margin-bottom:16px; font-family:var(--font-mono); background:var(--bg-tertiary); padding:10px; border-radius:6px;">${chapter.simple.example}</p>
+                    </div>
+                </div>
+                `;
+            } else if (view === 'free-apis') {
+                const apiTools = window.AI_TOOLS_DATA.filter(t => t.apiAvailable);
+                stage.innerHTML = `
+                <div style="background:var(--bg-secondary); padding:28px; border-radius:12px; border:1px solid var(--border-color);">
+                    <h1 style="color:var(--brand-primary); margin-bottom:8px;">🔌 Free AI APIs Developer Directory</h1>
+                    <p style="color:var(--text-secondary); margin-bottom:24px;">Tools from the 100 AI Directory that provide free API access tiers or open-source local endpoints for developers.</p>
+                    
+                    <div class="tools-grid">
+                        ${apiTools.map(t => `
+                            <div class="tool-card">
+                                <div>
+                                    <div class="tool-card-title">${t.name} API</div>
+                                    <p style="font-size:0.85rem; color:var(--text-muted); margin:4px 0;">${t.category}</p>
+                                    <p style="font-size:0.88rem; margin-top:8px;">${t.mainUse}</p>
+                                </div>
+                                <div style="margin-top:14px;">
+                                    <a href="${t.apiUrl}" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;">Open API Documentation</a>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                `;
+            }
+        },
+
+        toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            document.getElementById('themeToggleBtn').innerText = next === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+        }
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+        window.App.init();
+    });
+    </script>
 </body>
 </html>
